@@ -1,10 +1,10 @@
 # 创问官网 www.cccoach.cn：改动记录与回退
 
-这个仓库记录对官网服务器做过的每一次改动，每个版本都能退回去。现在管的是“旧官网网址怎么处理”这部分：
+这个仓库记录对官网服务器做过的每一次改动，每个版本都能退回去。**官网每次上线都先提交到这里，再从这里部署。**现在管的是：
 
-- 旧网址能对上新站的，301 跳到新页面；
-- 对不上的，用旧站原文在原网址恢复成存档页；
-- 旧图片、视频恢复。
+- 旧官网网址：能对上新站的 301 跳到新页面；对不上的用旧站原文在原网址恢复成存档页；旧图片、视频恢复；
+- 搜索与 AI（GEO）：http 跳 https、站点地图修正、robots.txt、llms.txt、重复页处理；
+- 新站模板：页面标题、描述、一级标题、结构化数据、页脚链接。
 
 每一版改了什么，见 [CHANGELOG.md](CHANGELOG.md)。在 GitHub 上点某次提交，能看到改前改后的对比。
 
@@ -21,7 +21,9 @@
 - `v0` = 全部撤掉，回到最初原样；`main` = 回到最新版。
 - 切换前会自动备份线上文件（`/root/cccoach_switch_backup/时间/`）。
 - nginx 自检不通过会自动恢复，网站不受影响。
-- 只动三处：`/www/server/panel/vhost/nginx/0.cccoach_legacy_map.conf`、`/www/server/panel/vhost/nginx/extension/www.cccoach.cn/legacy-redirect.conf`、`/www/wwwroot/cccoach-legacy/`。新站（JPress）本身不受影响。
+- 只动这几处：`/www/server/panel/vhost/nginx/0.cccoach_legacy_map.conf`、`/www/server/panel/vhost/nginx/extension/www.cccoach.cn/legacy-redirect.conf`、`/www/wwwroot/cccoach-legacy/`（存档页）、`/www/wwwroot/cccoach-seo/`（robots.txt、llms.txt）、新站模板目录 `/www/wwwroot/jpress/webapp/templates/4269b344/cccoach/` 里仓库跟踪的模板文件。
+- 模板有变化时会自动重启新站（约 10–20 秒），首页恢复 200 才算成功；重启后打不开会自动换回原模板并再重启。
+- 重启用 `scripts/restart-jpress.sh`，不要用新站目录里的 `jpress.sh stop`：它按路径杀进程，远程调用时会连调用者一起杀掉，导致新站起不来。
 
 ## 目录
 
@@ -32,7 +34,9 @@
 | `legacy-archive/pages/` | 存档页（静态 HTML），线上放在 `/www/wwwroot/cccoach-legacy/` |
 | `legacy-archive/generator/` | 生成存档页的脚本，以及 301 跳转清单 `deploy_rows.json` |
 | `mapping/` | 旧网址 → 新网址对照表 |
-| `scripts/` | 切换版本 / 回退脚本 |
+| `site-seo/` | robots.txt、llms.txt，线上放在 `/www/wwwroot/cccoach-seo/` |
+| `jpress-template/` | 新站模板文件（原版见标签 `template-original`） |
+| `scripts/` | 切换版本 / 回退脚本、安全重启新站脚本 |
 
 ## 重新生成存档页
 
