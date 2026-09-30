@@ -1,0 +1,590 @@
+{
+ "id": "2026-09-30-geo",
+ "ops": [
+  {
+   "type": "block_option",
+   "template_id": "top.jstart",
+   "path": [
+    0,
+    "children",
+    "0",
+    1,
+    "数字1"
+   ],
+   "old": "2000",
+   "new": "13年",
+   "note": "统计 1 数字"
+  },
+  {
+   "type": "block_option",
+   "template_id": "top.jstart",
+   "path": [
+    0,
+    "children",
+    "0",
+    1,
+    "描述1"
+   ],
+   "old": "我们培养了2000+<br>\n进化教练（PCC级别）",
+   "new": "创问成立于 2013 年<br>\n专注教练培养",
+   "note": "统计 1 说明"
+  },
+  {
+   "type": "block_option",
+   "template_id": "top.jstart",
+   "path": [
+    0,
+    "children",
+    "0",
+    1,
+    "数字2"
+   ],
+   "old": "1500",
+   "new": "13城",
+   "note": "统计 2 数字"
+  },
+  {
+   "type": "block_option",
+   "template_id": "top.jstart",
+   "path": [
+    0,
+    "children",
+    "0",
+    1,
+    "描述2"
+   ],
+   "old": "1500+名纯净教练<br>\n（ACC级别）",
+   "new": "覆盖 13 座城市<br>\n上海·深圳·北京·成都有线下中心",
+   "note": "统计 2 说明"
+  },
+  {
+   "type": "block_option",
+   "template_id": "top.jstart",
+   "path": [
+    0,
+    "children",
+    "0",
+    1,
+    "数字3"
+   ],
+   "old": "200",
+   "new": "30万+",
+   "note": "统计 3 数字"
+  },
+  {
+   "type": "block_option",
+   "template_id": "top.jstart",
+   "path": [
+    0,
+    "children",
+    "0",
+    1,
+    "描述3"
+   ],
+   "old": "我们认证了300+<br>\n团队教练",
+   "new": "学员参与<br>\n创问学习",
+   "note": "统计 3 说明"
+  },
+  {
+   "type": "block_option",
+   "template_id": "top.jstart",
+   "path": [
+    0,
+    "children",
+    "0",
+    1,
+    "数字4"
+   ],
+   "old": "200000",
+   "new": "4000+",
+   "note": "统计 4 数字"
+  },
+  {
+   "type": "block_option",
+   "template_id": "top.jstart",
+   "path": [
+    0,
+    "children",
+    "0",
+    1,
+    "描述4"
+   ],
+   "old": "200000+人参与<br>\n创问学习",
+   "new": "培养进化&amp;纯净教练<br>\n学员中 ICF 认证：ACC 150+ · PCC 180+ · MCC 19 人",
+   "note": "统计 4 说明"
+  },
+  {
+   "type": "block_option",
+   "template_id": "top.jstart",
+   "path": [
+    0,
+    "children",
+    "0",
+    0,
+    "children",
+    "2",
+    0,
+    "教练内容3"
+   ],
+   "old": "全球排名前三的唯一一位女性教练<br>全球排名前三的唯ICF国际教练联合会第五任主席<br>畅销书《超越你的大脑》、《教练的本质》等作者",
+   "new": "全球排名前三的唯一一位女性教练<br>ICF国际教练联合会第五任主席<br>畅销书《超越你的大脑》、《教练的本质》等作者",
+   "note": "Marcia Reynolds 介绍错字"
+  },
+  {
+   "type": "replace",
+   "table": "article",
+   "key": {
+    "id": 62
+   },
+   "field": "content",
+   "old": "<img src=\"/attachment/20260729/11bce2aa0544485894596b479ff7bbfe.jpg\">",
+   "new": "<img alt=\"ICF PCC/MCC认证笔试改革信息图：新PCC-MCC考试2026年11月10日上线，80题（44情境判断+36知识选择），150分钟，换算分460通过\" src=\"/attachment/20260729/11bce2aa0544485894596b479ff7bbfe.jpg\">",
+   "count": 1,
+   "note": "PCC-MCC Exam（PCC-MCC 考试）"
+  },
+  {
+   "type": "replace",
+   "table": "article",
+   "key": {
+    "id": 62
+   },
+   "field": "content",
+   "old": "<img src=\"/attachment/20260729/dabae49436a7464680e10bbe0a1dd30f.png\">",
+   "new": "<img alt=\"PCC-MCC新考试规格表：总题量80道（44道情境判断+36道知识类选择），150分钟含10分钟可选休息，换算分460分通过（满分600）\" src=\"/attachment/20260729/dabae49436a7464680e10bbe0a1dd30f.png\">",
+   "count": 1,
+   "note": "PCC-MCC Exam（PCC-MCC 考试）规格"
+  },
+  {
+   "type": "replace",
+   "table": "article",
+   "key": {
+    "id": 63
+   },
+   "field": "content",
+   "old": "<img src=\"/attachment/20260729/1b0e656a1fe34c2d8de766a0ff140bbe.png\">",
+   "new": "<img alt=\"柱状图：客户对持证与非持证教练的满意度，持证教练客户非常满意59%，非持证33%，数据来源2022 ICF教练消费者调研报告\" src=\"/attachment/20260729/1b0e656a1fe34c2d8de766a0ff140bbe.png\">",
+   "count": 1,
+   "note": "2022 ICF教练消费者调研报告（持证/非持证教练满意度）"
+  },
+  {
+   "type": "replace",
+   "table": "article",
+   "key": {
+    "id": 70
+   },
+   "field": "content",
+   "old": "<img src=\"/attachment/20260901/d4583659310d44cfb2274db31d991e62.png\">",
+   "new": "<img alt=\"MCQ辅导教练资格与CSQ教练督导资格对比表：服务对象、核心功能、先决条件、41小时以上培训、续期要求、登记册和对认证的影响\" src=\"/attachment/20260901/d4583659310d44cfb2274db31d991e62.png\">",
+   "count": 1,
+   "note": "MCQ 辅导教练资格（Mentor Coaching Qualification）/ CSQ 教练督导资格（Coaching Supervision Qualification）"
+  },
+  {
+   "type": "replace",
+   "table": "article",
+   "key": {
+    "id": 70
+   },
+   "field": "content",
+   "old": "<img src=\"/attachment/20260901/2763f0743da74e6aadc9d4f4ed5d8abb.jpeg\">",
+   "new": "<img alt=\"教练督导与辅导核心差异表：辅导教练按ICF核心能力和ACC/PCC/MCC标准评估技能，教练督导无固定标准，关注教练的自我与成熟度\" src=\"/attachment/20260901/2763f0743da74e6aadc9d4f4ed5d8abb.jpeg\">",
+   "count": 1,
+   "note": "Mentor Coaching 辅导教练 / Coaching Supervision 教练督导"
+  },
+  {
+   "type": "replace",
+   "table": "article",
+   "key": {
+    "id": 70
+   },
+   "field": "content",
+   "old": "<img src=\"/attachment/20260901/ac6a2f56b30642768975fed5f6de829b.png\">",
+   "new": "<img alt=\"MCQ与CSQ对ICF认证的影响：申请ACC/PCC/MCC须完成教练辅导学时；ACTC需5小时督导，2027年1月起须由CSQ持有者提供\" src=\"/attachment/20260901/ac6a2f56b30642768975fed5f6de829b.png\">",
+   "count": 1,
+   "note": "MCQ / CSQ 与 ACC/PCC/MCC、ACTC（高级团队教练认证）及认证续期的关系"
+  },
+  {
+   "type": "replace",
+   "table": "article",
+   "key": {
+    "id": 70
+   },
+   "field": "content",
+   "old": "<img src=\"/attachment/20260901/4879f54061c64339bbb13b6295144b9b.png\">",
+   "new": "<img alt=\"教练成长路径图：新手教练经MCQ督导辅导通过认证，成为执业教练后接受CSQ教练督导，持续成长\" src=\"/attachment/20260901/4879f54061c64339bbb13b6295144b9b.png\">",
+   "count": 1,
+   "note": "教练成长路径（MCQ 督导辅导 → 通过认证 → CSQ 教练督导）"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "brand-courses-coach-mcc"
+   },
+   "field": "content",
+   "old": "<img class=\"image_resized\" style=\"width:100%;\" src=\"/attachment/20250331/559d2e13c5e14e1aba54dbd5334be961.png\" alt=\"banner.png\">",
+   "new": "<img class=\"image_resized\" style=\"width:100%;\" src=\"/attachment/20250331/559d2e13c5e14e1aba54dbd5334be961.png\" alt=\"MCC认证班横幅，导师 Marcia Reynolds（组织心理学博士、认证演说专家 CSP）与 Lisa Wynn（MCC、ICF指导委员会主任）\">",
+   "count": 1,
+   "note": "组织心理学博士；认证演说专家（CSP）；MCC大师级教练；ICF指导委员会主任"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "brand-courses-coach-mcc"
+   },
+   "field": "content",
+   "old": "<img class=\"image_resized\" style=\"width:100%;\" src=\"/attachment/20250331/d687a9e2400145a9b508c6db5712b4ab.png\" alt=\"certimg.png\">",
+   "new": "<img class=\"image_resized\" style=\"width:100%;\" src=\"/attachment/20250331/d687a9e2400145a9b508c6db5712b4ab.png\" alt=\"TNM 颁发的 Evolutionary Coaching Master Program Level 3 结业证书（2021–2023），三位 MCC 署名\">",
+   "count": 1,
+   "note": "Certificate of Completion：Evolutionary Coaching Master Program, Level 3"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "brand-courses-coach-senior"
+   },
+   "field": "content",
+   "old": "<img class=\"image_resized\" style=\"width:100%;\" src=\"/attachment/20250328/eafb815fd7214daf887f75334ae3a54d.png\" alt=\"banner.png\">",
+   "new": "<img class=\"image_resized\" style=\"width:100%;\" src=\"/attachment/20250328/eafb815fd7214daf887f75334ae3a54d.png\" alt=\"高阶进化教练导师 Zoran Todorovic 照片，图上写着：MCC大师级教练、TNM国际教练集团主席、《进化战略家》作者\">",
+   "count": 1,
+   "note": "MCC大师级教练；TNM国际教练集团主席"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "brand-courses-coach-social-theater"
+   },
+   "field": "content",
+   "old": "<img class=\"image_resized\" style=\"width:100%;\" src=\"/attachment/20250331/f9b006f05d23400aae8a200ecbd1801b.png\" alt=\"banner.png\">",
+   "new": "<img class=\"image_resized\" style=\"width:100%;\" src=\"/attachment/20250331/f9b006f05d23400aae8a200ecbd1801b.png\" alt=\"社会大剧院创始人 Arawana Hayashi 照片，图上写着：社会大剧院创始人、自然流现研究院联合创始人、近50年正念践行者\">",
+   "count": 1,
+   "note": "社会大剧院创始人；自然流现研究院联合创始人"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "brand-courses-coach-speechmaker"
+   },
+   "field": "content",
+   "old": "<img class=\"image_resized\" style=\"width:100%;\" src=\"/attachment/20250329/fd8008f3fb6b4116b7bcf0d53ec85f96.png\" alt=\"banner.png\">",
+   "new": "<img class=\"image_resized\" style=\"width:100%;\" src=\"/attachment/20250329/fd8008f3fb6b4116b7bcf0d53ec85f96.png\" alt=\"“成为演说家”课程导师 Marcia Reynolds 照片，图上写着：组织心理学博士、认证演说专家（CSP）\">",
+   "count": 1,
+   "note": "组织心理学博士；认证演说专家（CSP）"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "brand-courses-coach-speechmaker"
+   },
+   "field": "content",
+   "old": "<img class=\"image_resized\" style=\"width:100%;\" src=\"/attachment/20250329/6d845c379d11437caf6cc2bb4811b835.png\" alt=\"centimg.png\">",
+   "new": "<img class=\"image_resized\" style=\"width:100%;\" src=\"/attachment/20250329/6d845c379d11437caf6cc2bb4811b835.png\" alt=\"创问中国教练中心 Becoming a Master Storyteller（成为演说家）课程证书样张，2024 年 5 月 24–26 日\">",
+   "count": 1,
+   "note": "Becoming a Master Storyteller"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "brand-courses-coach-supervisor"
+   },
+   "field": "content",
+   "old": "<img class=\"image_resized\" style=\"width:100%;\" src=\"/attachment/20250331/abff84f43baa48d3b2faeebd6d0752ac.png\" alt=\"banner.png\">",
+   "new": "<img class=\"image_resized\" style=\"width:100%;\" src=\"/attachment/20250331/abff84f43baa48d3b2faeebd6d0752ac.png\" alt=\"教练督导/辅导认证班横幅，导师刘东 Dana（PCC、创问考官）和贺拥军 Jeff（MCC、创问考官）\">",
+   "count": 1,
+   "note": "PCC / MCC；创问考官"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "brand-courses-coach-supervisor"
+   },
+   "field": "content",
+   "old": "<img class=\"image_resized\" style=\"width:100%;\" src=\"/attachment/20250331/ad0e2751ae2f4bb38488e475e18d5678.png\" alt=\"certimg.png\">",
+   "new": "<img class=\"image_resized\" style=\"width:100%;\" src=\"/attachment/20250331/ad0e2751ae2f4bb38488e475e18d5678.png\" alt=\"创问中国教练中心 Mentoring and Supervision（教练督导/辅导）结业证书样张，2021 年课程共 32 小时，带 ICF、CCE 标志\">",
+   "count": 1,
+   "note": "Mentoring and Supervision"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "brand-courses-evolution"
+   },
+   "field": "content",
+   "old": "<img class=\"team-med\" src=\"/attachment/20250323/a7f740b610d84bf1be1e585008d7d0f6.png\" alt=\"\">",
+   "new": "<img class=\"team-med\" src=\"/attachment/20250323/a7f740b610d84bf1be1e585008d7d0f6.png\" alt=\"ICF Level 2 机构认证证书，获得方 TNM Coaching Ltd 与 Corporate Potential Ltd，153 小时，2014 年\">",
+   "count": 1,
+   "note": "Certificate of Accreditation：Level 2 ICF Accredited Coaching Education Provider（153 Contact Hours）"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "brand-courses-pure-pcc"
+   },
+   "field": "content",
+   "old": "<img class=\"image_resized\" style=\"width:100%;\" src=\"/attachment/20250330/c5e442c178ea4da0b11f308481e9777b.png\" alt=\"banner.png\">",
+   "new": "<img class=\"image_resized\" style=\"width:100%;\" src=\"/attachment/20250330/c5e442c178ea4da0b11f308481e9777b.png\" alt=\"纯净PCC三位导师合影，图上头衔有：社会大剧院高级认证导师、《纯净教练》开创者、麻省理工u.lab中国合伙人\">",
+   "count": 1,
+   "note": "社会大剧院高级认证导师；《纯净教练》开创者；麻省理工u.lab中国合伙人"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "brand-courses-pure-pcc"
+   },
+   "field": "content",
+   "old": "<img style=\"height:60rem;margin-top:-6rem;\" src=\"/attachment/20250330/0da5978ffc994a9993b0950ad12d121a.png\" alt=\"pcc-level.png\">",
+   "new": "<img style=\"height:60rem;margin-top:-6rem;\" src=\"/attachment/20250330/0da5978ffc994a9993b0950ad12d121a.png\" alt=\"纯净PCC认证（Level 2）要求：60 小时课程、10 小时督导加一次口试、录音与逐字稿审核、官网申请笔试\">",
+   "count": 1,
+   "note": "纯净PCC认证 Level 2"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "brand-courses-significant"
+   },
+   "field": "content",
+   "old": "<img class=\"team-med\" src=\"/attachment/20250323/d11799bcb65e4a44a7e725a26f9f6816.png\" alt=\"jzhang.png\">",
+   "new": "<img class=\"team-med\" src=\"/attachment/20250323/d11799bcb65e4a44a7e725a26f9f6816.png\" alt=\"ICF 颁给创问中国教练中心（Create China Coaching Center）的 Level 2 教练教育机构认证证书，135 小时，2018 年颁发\">",
+   "count": 1,
+   "note": "Certificate of Accreditation：Level 2 ICF Accredited Coaching Education Provider（135 hours）"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "brand-courses-team-acc"
+   },
+   "field": "content",
+   "old": "<img class=\"image_resized\" style=\"width:100%;\" src=\"/attachment/20250327/8623d86c996241f0be7adac02401fda3.png\" alt=\"banner.png\">",
+   "new": "<img class=\"image_resized\" style=\"width:100%;\" src=\"/attachment/20250327/8623d86c996241f0be7adac02401fda3.png\" alt=\"ACC辅导导师合影：尤志欣 Eric（MCC、ICF认证考官）、刘东 Dana（PCC、创问考官）、贺拥军 Jeff（MCC、创问考官）\">",
+   "count": 1,
+   "note": "MCC / PCC；ICF认证考官；创问考官"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "brand-courses-team-acc"
+   },
+   "field": "content",
+   "old": "<img class=\"image_resized\" style=\"width:100%;\" src=\"/attachment/20250327/31d9f63d47eb4da98b2e3523a1482e2f.png\" alt=\"＜编组＞@2x(1).png\">",
+   "new": "<img class=\"image_resized\" style=\"width:100%;\" src=\"/attachment/20250327/31d9f63d47eb4da98b2e3523a1482e2f.png\" alt=\"ICF 颁给创问中国教练中心（Create China Coaching Center）的 Level 1 教练教育机构认证证书，66 小时，2018 年颁发\">",
+   "count": 1,
+   "note": "Certificate of Accreditation：Level 1 ICF Accredited Coaching Education Provider（66 Hours）"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "brand-courses-team-acc"
+   },
+   "field": "content",
+   "old": "<img class=\"image_resized\" style=\"width:60%;\" src=\"/attachment/20250327/92c062504be24159a80635a5e5324884.png\" alt=\"组 1@2x(2).png\">",
+   "new": "<img class=\"image_resized\" style=\"width:60%;\" src=\"/attachment/20250327/92c062504be24159a80635a5e5324884.png\" alt=\"ICF ACC 助理级教练徽章与三项条件：60 小时以上系统学习、10 小时 ACC 辅导、通过 ACC 口试\">",
+   "count": 1,
+   "note": "ACC（Associate Certified Coach）"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "brand-courses-team-acc"
+   },
+   "field": "content",
+   "old": "<img class=\"image_resized\" style=\"width:80%;\" src=\"/attachment/20250327/c42c691c028d48ff8dff49513caac549.png\" alt=\"＜编组＞@2x(2).png\">",
+   "new": "<img class=\"image_resized\" style=\"width:80%;\" src=\"/attachment/20250327/c42c691c028d48ff8dff49513caac549.png\" alt=\"ACC辅导包说明图：6 小时团体辅导督导加 4 小时一对一辅导督导，含 1 次 ACC 口试，需在 18 个月内完成\">",
+   "count": 1,
+   "note": "ACC辅导包"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "brand-courses-team-acc"
+   },
+   "field": "content",
+   "old": "<img class=\"image_resized\" style=\"width:100%;\" src=\"/attachment/20250327/c0a4b36a247542138832e9aa4bde52e2.png\" alt=\"组 1@2x(1).png\">",
+   "new": "<img class=\"image_resized\" style=\"width:100%;\" src=\"/attachment/20250327/c0a4b36a247542138832e9aa4bde52e2.png\" alt=\"ACC 认证路径：学完纯净或进化教练课程拿结业证书，10 小时辅导加口试拿 Level 1 证书，再满 100 小时实践并笔试拿 ACC\">",
+   "count": 1,
+   "note": "ACC 认证路径"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "brand-courses-team-pcc"
+   },
+   "field": "content",
+   "old": "<img class=\"team-med team-gree\" src=\"/attachment/20250323/ac9444338423491c86860acf02081640.png\" alt=\"\">",
+   "new": "<img class=\"team-med team-gree\" src=\"/attachment/20250323/ac9444338423491c86860acf02081640.png\" alt=\"ICF 颁发的 PCC（Professional Certified Coach，专业级教练）认证证书，获证人姓名处空白，2021 年颁发\">",
+   "count": 1,
+   "note": "Professional Certified Coach (PCC)™"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "brand-courses-team4c"
+   },
+   "field": "content",
+   "old": "<img class=\"team-med team-gree\" src=\"/attachment/20250323/bedb66d8ef0e4828be2c43cdf0600e20.png\" alt=\"\">",
+   "new": "<img class=\"team-med team-gree\" src=\"/attachment/20250323/bedb66d8ef0e4828be2c43cdf0600e20.png\" alt=\"创问中国教练中心 4C Team Coaching Coach Programme（4C团队教练）结业证书，2020 年课程，23.5 小时继续教育学时\">",
+   "count": 1,
+   "note": "4C Team Coaching Coach Programme"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "profile"
+   },
+   "field": "content",
+   "old": "<img class=\"pr-img\" src=\"/attachment/20250309/4d31ec65241a4a219e87255ea5a5823f.png\" alt=\"tu1\">",
+   "new": "<img class=\"pr-img\" src=\"/attachment/20250309/4d31ec65241a4a219e87255ea5a5823f.png\" alt=\"HR智享会“2019中国学习与发展供应商价值大奖”奖状：创问中国教练中心获评“2019中国教练服务机构5强”\">",
+   "count": 1,
+   "note": "2019 中国教练服务机构5强（2019 China Top 5 Coaching Service Solution Providers）"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "profile"
+   },
+   "field": "content",
+   "old": "<img class=\"pr-img-two\" src=\"/attachment/20250309/3094de6fbbeb43ba92d51b3989d7f001.png\" alt=\"tu2\">",
+   "new": "<img class=\"pr-img-two\" src=\"/attachment/20250309/3094de6fbbeb43ba92d51b3989d7f001.png\" alt=\"证书合集：ICF认证创问中国教练中心为Level 1认证教练教育机构；TNM获ICF Level 1、2认证；TNM授权创问为中国唯一合作伙伴\">",
+   "count": 1,
+   "note": "ICF Level 1 认证教练教育机构证书（创问）；ICF Level 1、Level 2 认证教练教育机构证书（TNM）；TNM 中国唯一合作伙伴授权证书"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "profile"
+   },
+   "field": "content",
+   "old": "<img class=\"pr-img-tree\" src=\"/attachment/20250309/6f91691f8a8b4c6f8035b11aabecfae9.png\" alt=\"tu3\">",
+   "new": "<img class=\"pr-img-tree\" src=\"/attachment/20250309/6f91691f8a8b4c6f8035b11aabecfae9.png\" alt=\"青花瓷奖盘：“2019中国教练服务机构5强”，2019中国学习与发展供应商价值大奖，授予创问中国教练中心\">",
+   "count": 1,
+   "note": "2019 中国教练服务机构5强"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "profile"
+   },
+   "field": "content",
+   "old": "<img class=\"pr-footer\" src=\"/attachment/20250309/8b5bd72d99d348c7874f96f0c522551d.png\" alt=\"tu4\">",
+   "new": "<img class=\"pr-footer\" src=\"/attachment/20250309/8b5bd72d99d348c7874f96f0c522551d.png\" alt=\"诺亚公益拍品捐赠证书：创问中国教练中心在“诺亚公益5周年感恩答谢盛典”捐赠《进化教练》课程作拍品\">",
+   "count": 1,
+   "note": "拍品捐赠证书（诺亚公益5周年感恩答谢盛典）"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "profile"
+   },
+   "field": "content",
+   "old": "<img class=\"pr-footer\" src=\"/attachment/20250309/73bb9a5a4f094e2585ee5aa66756fff9.png\" alt=\"tu5\">",
+   "new": "<img class=\"pr-footer\" src=\"/attachment/20250309/73bb9a5a4f094e2585ee5aa66756fff9.png\" alt=\"上海交通大学未来科创教育领袖峰会嘉许状（Certificate Of Appreciation），授予何朝霞（创问创始人）\">",
+   "count": 1,
+   "note": "嘉许状（Certificate Of Appreciation）"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "profile"
+   },
+   "field": "content",
+   "old": "<img class=\"pr-footer\" src=\"/attachment/20250309/4118b8be1afb4342b86237311c8d52cc.png\" alt=\"tu6\">",
+   "new": "<img class=\"pr-footer\" src=\"/attachment/20250309/4118b8be1afb4342b86237311c8d52cc.png\" alt=\"杉树公益捐赠证书：上海创问企业管理咨询中心捐助26,239.50元，支持2023年杉树公益第六届教练型老师培训\">",
+   "count": 1,
+   "note": "捐赠证书（编号 C230110122）"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "profile"
+   },
+   "field": "content",
+   "old": "<img class=\"pr-footer\" src=\"/attachment/20250309/8e140d86e6904b32a728d48cf195eb7c.png\" alt=\"tu7\">",
+   "new": "<img class=\"pr-footer\" src=\"/attachment/20250309/8e140d86e6904b32a728d48cf195eb7c.png\" alt=\"“中欧校友爱心联盟之家”牌匾：上海·创问中国教练中心，落款CEIBS中欧校友爱心联盟\">",
+   "count": 1,
+   "note": "中欧校友爱心联盟之家"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "profile"
+   },
+   "field": "content",
+   "old": "<img class=\"pr-tre-n\" src=\"/attachment/20250309/0418d2edf06f40ffaae69b653459eefa.png\" alt=\"kong\">",
+   "new": "<img class=\"pr-tre-n\" src=\"/attachment/20250309/0418d2edf06f40ffaae69b653459eefa.png\" alt=\"ICF上海分会荣誉证书：创问中国教练中心在2020年国际教练周（ICW2020）荣获“最佳组织奖”\">",
+   "count": 1,
+   "note": "2020年国际教练周“最佳组织奖”"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "profile"
+   },
+   "field": "content",
+   "old": "<img class=\"pr-tre-n\" src=\"/attachment/20250309/dfa11f0909d34a0598077f9364821c08.png\" alt=\"kong\">",
+   "new": "<img class=\"pr-tre-n\" src=\"/attachment/20250309/dfa11f0909d34a0598077f9364821c08.png\" alt=\"杉树公益“战略合作伙伴”牌匾（金底绿字）：向上生长 向善前进，印有创问与杉树公益标志\">",
+   "count": 1,
+   "note": "战略合作伙伴"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "profile"
+   },
+   "field": "content",
+   "old": "<img class=\"pr-tre-n\" src=\"/attachment/20250309/3684e7fd83774f65ad47122470121485.png\" alt=\"kong\">",
+   "new": "<img class=\"pr-tre-n\" src=\"/attachment/20250309/3684e7fd83774f65ad47122470121485.png\" alt=\"杉树公益“战略合作伙伴”木质牌匾：向上生长 向善前进，用爱心和行动支撑起生命影响生命的事业\">",
+   "count": 1,
+   "note": "杉树公益战略合作伙伴"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "profile"
+   },
+   "field": "content",
+   "old": "<img class=\"pr-four\" src=\"/attachment/20250309/8146abe7cc314a6ba4bec1cdc76c1115.png\" alt=\"tu8\">",
+   "new": "<img class=\"pr-four\" src=\"/attachment/20250309/8146abe7cc314a6ba4bec1cdc76c1115.png\" alt=\"ICF上海分会水晶奖杯：2019年国际教练周（2019.4.29-5.5）“最具传播力奖”，授予创问中国教练中心\">",
+   "count": 1,
+   "note": "2019年国际教练周“最具传播力奖”"
+  },
+  {
+   "type": "article",
+   "dir": "content/articles/icf-cce-credits-renewal"
+  },
+  {
+   "type": "article",
+   "dir": "content/articles/icf-coaching-career-block"
+  },
+  {
+   "type": "article",
+   "dir": "content/articles/new-coach-first-100-hours"
+  }
+ ]
+}

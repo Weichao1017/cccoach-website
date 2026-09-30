@@ -17,11 +17,11 @@
         <div class="bg_fff home-six-toux" onclick="location.href='#(article.url ??)'">
             <div class="">
                 <div class="home-img-wtd">
-                    <img class="home-img-yp" src="#(article.thumbnail ??)" alt="" srcset="">
+                    <img class="home-img-yp" src="#(article.thumbnail ??)" alt="#((article.title ?? '').replace('"', '“'))" srcset="">
                 </div>
             </div>
             <div class="home-six-mz color_48">
-                #(article.title ??)
+                <a href="#(article.url ??)" style="color:inherit;text-decoration:none">#(article.title ??)</a>
             </div>
             <div class="bg_007855 home-six-bgm fx-a-c">
                 #articleCategories(article.id,"tag")

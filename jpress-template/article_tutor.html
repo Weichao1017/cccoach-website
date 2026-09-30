@@ -46,7 +46,7 @@
             <div class="main-logo">
                 <div class="custom-box">
                     <div class="logo">
-                        <img class="image_resized" src="#(article.showImage ??)" alt="ewm.png">
+                        <img class="image_resized" src="#(article.showImage ??)" alt="#((article.title ?? '').replace('"', '“'))">
                     </div>
                     <p class="name">#(article.title ??)</p>
                     #articleCategories(article.id,"tag")
