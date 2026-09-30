@@ -1,0 +1,12 @@
+# 不放进仓库：数据库导出、旧站原始数据、名单文件、临时文件
+*.sql
+*.sql.gz
+*.tgz
+*.tar.gz
+old_content*.json
+**/excel/
+**/files/
+build/
+.DS_Store
+._*
+__pycache__/
