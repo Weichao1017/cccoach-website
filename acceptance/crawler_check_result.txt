@@ -1,0 +1,58 @@
+== 各爬虫能否打开（状态码 / 字节数）
+/ GPTBot:200/76385 OAI-SearchBot:200/76385 ClaudeBot:200/76385 PerplexityBot:200/76385 Bytespider:200/76385 Baiduspider:200/76385 Googlebot:200/76385
+/article/12 GPTBot:200/58323 OAI-SearchBot:200/58323 ClaudeBot:200/58323 PerplexityBot:200/58323 Bytespider:200/58323 Baiduspider:200/58323 Googlebot:200/58323
+/article/62 GPTBot:200/78554 OAI-SearchBot:200/78554 ClaudeBot:200/78554 PerplexityBot:200/78554 Bytespider:200/78554 Baiduspider:200/78554 Googlebot:200/78554
+/article/63 GPTBot:200/69422 OAI-SearchBot:200/69422 ClaudeBot:200/69422 PerplexityBot:200/69422 Bytespider:200/69422 Baiduspider:200/69422 Googlebot:200/69422
+/article/70 GPTBot:200/90748 OAI-SearchBot:200/90748 ClaudeBot:200/90748 PerplexityBot:200/90748 Bytespider:200/90748 Baiduspider:200/90748 Googlebot:200/90748
+/article/category/encyclopedia GPTBot:200/58317 OAI-SearchBot:200/58317 ClaudeBot:200/58317 PerplexityBot:200/58317 Bytespider:200/58317 Baiduspider:200/58317 Googlebot:200/58317
+/article/category/news GPTBot:200/67316 OAI-SearchBot:200/67316 ClaudeBot:200/67316 PerplexityBot:200/67316 Bytespider:200/67316 Baiduspider:200/67316 Googlebot:200/67316
+/article/category/teaching GPTBot:200/83266 OAI-SearchBot:200/83266 ClaudeBot:200/83266 PerplexityBot:200/83266 Bytespider:200/83266 Baiduspider:200/83266 Googlebot:200/83266
+/article/icf-cce-credits-renewal GPTBot:200/71501 OAI-SearchBot:200/71501 ClaudeBot:200/71501 PerplexityBot:200/71501 Bytespider:200/71501 Baiduspider:200/71501 Googlebot:200/71501
+/article/icf-coaching-career-block GPTBot:200/68537 OAI-SearchBot:200/68537 ClaudeBot:200/68537 PerplexityBot:200/68537 Bytespider:200/68537 Baiduspider:200/68537 Googlebot:200/68537
+/article/new-coach-first-100-hours GPTBot:200/64380 OAI-SearchBot:200/64380 ClaudeBot:200/64380 PerplexityBot:200/64380 Bytespider:200/64380 Baiduspider:200/64380 Googlebot:200/64380
+/brand-courses-significant GPTBot:200/77613 OAI-SearchBot:200/77613 ClaudeBot:200/77613 PerplexityBot:200/77613 Bytespider:200/77613 Baiduspider:200/77613 Googlebot:200/77613
+/brand-courses-team-acc GPTBot:200/76808 OAI-SearchBot:200/76808 ClaudeBot:200/76808 PerplexityBot:200/76808 Bytespider:200/76808 Baiduspider:200/76808 Googlebot:200/76808
+/llms.txt GPTBot:200/3078 OAI-SearchBot:200/3078 ClaudeBot:200/3078 PerplexityBot:200/3078 Bytespider:200/3078 Baiduspider:200/3078 Googlebot:200/3078
+/profile GPTBot:200/67009 OAI-SearchBot:200/67009 ClaudeBot:200/67009 PerplexityBot:200/67009 Bytespider:200/67009 Baiduspider:200/67009 Googlebot:200/67009
+/robots.txt GPTBot:200/157 OAI-SearchBot:200/157 ClaudeBot:200/157 PerplexityBot:200/157 Bytespider:200/157 Baiduspider:200/157 Googlebot:200/157
+/sitemap.xml GPTBot:200/22166 OAI-SearchBot:200/22166 ClaudeBot:200/22166 PerplexityBot:200/22166 Bytespider:200/22166 Baiduspider:200/22166 Googlebot:200/22166
+
+== 内容检查（每项对 7 个爬虫都要通过）
+通过  /article/icf-coaching-career-block 一级标题
+通过  /article/icf-coaching-career-block 开头直接回答
+通过  /article/icf-coaching-career-block ICF 认证表（ACC 100 小时/75 付费）
+通过  /article/icf-coaching-career-block 品牌数字（学员中 ICF 认证）
+通过  /article/icf-coaching-career-block Article 结构化数据
+通过  /article/icf-coaching-career-block 参考资料链接（ICF 官网）
+通过  /article/new-coach-first-100-hours 一级标题
+通过  /article/new-coach-first-100-hours 关键事实（公益最多 25 小时）
+通过  /article/new-coach-first-100-hours Article 结构化数据
+通过  /article/icf-cce-credits-renewal   一级标题
+通过  /article/icf-cce-credits-renewal   续证规则（40 个 / 至少 24 个 / 175 美元）
+通过  /article/icf-cce-credits-renewal   课程学时表（28 / 26 / 18.5）
+通过  /article/icf-cce-credits-renewal   Article 结构化数据
+通过  /                                  首页数字（13年/13城/30万+/4000+）
+通过  /                                  首页 ICF 认证口径
+通过  /                                  Marcia 错字已改
+通过  /                                  认证路径图文字（画布备用内容）
+通过  /                                  机构结构化数据含奖项
+通过  /                                  页面描述含品牌数字
+通过  /profile                           获奖图替代文字（最具传播力奖）
+通过  /profile                           获奖图替代文字（最佳组织奖）
+通过  /profile                           获奖图替代文字（中国教练服务机构5强）
+通过  /profile                           没有 tu1/kong 这类占位替代文字
+通过  /brand-courses-team-acc            证书图替代文字（Level 1、66 小时）
+通过  /brand-courses-significant         证书图替代文字（Level 2、135 小时）
+通过  /brand-courses-team-acc            Course 结构化数据
+通过  /article/62                        考试信息图替代文字（80 题 / 150 分钟）
+通过  /article/63                        满意度图替代文字（59% / 33%）
+通过  /article/70                        MCQ/CSQ 对比表替代文字
+通过  /article/12                        导师头像替代文字是导师名
+通过  /article/category/news             知识全景列表有新文章的真链接
+通过  /article/category/encyclopedia     教练百科列表有新文章的真链接
+通过  /article/category/teaching         师资团队列表有导师页真链接
+通过  /robots.txt                        robots 不拦任何 AI 爬虫、站点地图写完整网址
+通过  /llms.txt                          llms.txt 含三篇新文章
+通过  /sitemap.xml                       站点地图含三篇新文章、全是 https
+
+共 36 项，失败 0 项
