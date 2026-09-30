@@ -11,7 +11,7 @@ UAS = {
 }
 B = 'https://www.cccoach.cn'
 def get(path, ua):
-    r = subprocess.run(['curl', '-s', '-m', '40', '-A', ua, '-w', '\n__CODE__%{http_code}', B + path], capture_output=True)
+    r = subprocess.run(['curl', '-s', '-m', '40', '-A', ua, '-w', '\n__CODE__%{http_code}', B + path], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     body, _, code = r.stdout.decode('utf-8', 'ignore').rpartition('\n__CODE__')
     return code, body
 def text_of(h):
@@ -73,6 +73,14 @@ CHECKS = [
  ('/brand-courses-dialogue', '单页字节更新时间标签', lambda h: re.search(r'property="bytedance:updated_time" content="\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\+08:00"', h) is not None),
  ('/profile', '改过的单页更新时间是今天', lambda h: re.search(r'property="bytedance:updated_time" content="2026-09-30T', h) is not None),
  ('/article/icf-coaching-career-block', '文章字节时间标签', lambda h: 'bytedance:published_time' in h and 'bytedance:updated_time' in h),
+
+ # v10 级别更正（客户 2026-09-30 确认：尤志欣 MCC；何朝霞、徐莉俐 PCC；王艺萍 MCC）
+ ('/brand-courses-dialogue', '尤志欣卡片为 MCC', lambda h: re.search(r'Eric 尤志欣\s*</div>\s*<div class="fx-f-s team-tpp">\s*<div class="team-cc[^"]*">\s*MCC', h) is not None),
+ ('/brand-courses-pure-pcc', '何朝霞、徐莉俐卡片为 PCC', lambda h: all(re.search(n + r'</p>.{0,400}?<strong>PCC</strong>', h, re.S) for n in ['何朝霞 Tess', '徐莉俐 Lili Xu'])),
+ ('/brand-courses-coach-social-theater', '徐莉俐卡片为 PCC', lambda h: re.search(r'徐莉俐 Lili Xu</p>.{0,400}?<strong>PCC</strong>', h, re.S) is not None),
+ ('/article/18', '尤志欣导师页：ICF MCC', lambda h: 'ICF认证大师级MCC教练' in text_of(h) and 'ICF PCC' not in text_of(h)),
+ ('/article/30', '王艺萍导师页：ICF MCC', lambda h: 'ICF MCC' in text_of(h)),
+ ('/article/21', '谢忠民导师页：华为等高管履历、1000+ 小时', lambda h: all(x in text_of(h) for x in ['华为', '1998', '1000+'])),
 ]
 pages = sorted({p for p, _, _ in CHECKS})
 res = {}
