@@ -65,6 +65,9 @@
 #end
 
 #define content()
+#if(page.slug && page.slug.startsWith('brand-courses-'))
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Course","name":"#(page.title.replace('"', '“'))","description":"#(ccwCourseDesc[page.slug] ?? (page.title.replace('"', '“') + ' - 创问中国教练中心课程'))","provider":{"@type":"EducationalOrganization","name":"创问中国教练中心","url":"https://www.cccoach.cn/"},"url":"https://www.cccoach.cn#(page.url ??)","inLanguage":"zh-CN"}</script>
+#end
 <div class="fixd-h">
     #(page.content ??)
 </div>
