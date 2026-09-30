@@ -2,6 +2,8 @@
 #@layout()
 
 #define css()
+    #if(article.created??)<meta property="bytedance:published_time" content="#date(article.created, "yyyy-MM-dd'T'HH:mm:ss")+08:00" />#end
+    #if(article.modified?? || article.created??)<meta property="bytedance:updated_time" content="#date(article.modified ?? article.created, "yyyy-MM-dd'T'HH:mm:ss")+08:00" />#end
 <link href="highlight/styles/railscasts.css" rel="stylesheet">
 <link href="#(CPATH)/static/components/ckeditor5/ck-content.css" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="#(CPATH)#(TPATH)/css/ecology.css?_1645215125652" />

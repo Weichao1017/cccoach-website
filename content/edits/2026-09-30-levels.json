@@ -1,0 +1,26 @@
+[
+ {
+  "page": "/brand-courses-dialogue",
+  "find": "Eric 尤志欣\n      </div>\n      <div class=\"fx-f-s team-tpp\">\n       <div class=\"team-cc fx-a-c-j-c bg_A7\">\n        PCC\n       <",
+  "replace": "Eric 尤志欣\n      </div>\n      <div class=\"fx-f-s team-tpp\">\n       <div class=\"team-cc fx-a-c-j-c bg_A7\">\n        MCC\n       <",
+  "note": "Eric 尤志欣：PCC → MCC（客户 2026-09-30 确认尤志欣是 MCC）"
+ },
+ {
+  "page": "/brand-courses-pure-pcc",
+  "find": "何朝霞 Tess</p>\n    <div style=\"color:#198264;display:flex;font-size:.75rem;line-height:1.25rem;margin:0.5rem 0;\">\n     <div class=\"team-cc\" style=\"background-color:#75BCA7;border-radius:6.25rem;padding:0 0.25rem;\">\n      <strong>MCC</strong>",
+  "replace": "何朝霞 Tess</p>\n    <div style=\"color:#198264;display:flex;font-size:.75rem;line-height:1.25rem;margin:0.5rem 0;\">\n     <div class=\"team-cc\" style=\"background-color:#75BCA7;border-radius:6.25rem;padding:0 0.25rem;\">\n      <strong>PCC</strong>",
+  "note": "何朝霞 Tess：MCC → PCC（客户 2026-09-30 确认何朝霞不是 MCC）"
+ },
+ {
+  "page": "/brand-courses-pure-pcc",
+  "find": "徐莉俐 Lili Xu</p>\n    <div style=\"color:#198264;display:flex;font-size:.75rem;line-height:1.25rem;margin:0.5rem 0;\">\n     <div class=\"team-cc\" style=\"background-color:#75BCA7;border-radius:6.25rem;padding:0 0.25rem;\">\n      <strong>MCC</strong>",
+  "replace": "徐莉俐 Lili Xu</p>\n    <div style=\"color:#198264;display:flex;font-size:.75rem;line-height:1.25rem;margin:0.5rem 0;\">\n     <div class=\"team-cc\" style=\"background-color:#75BCA7;border-radius:6.25rem;padding:0 0.25rem;\">\n      <strong>PCC</strong>",
+  "note": "徐莉俐 Lili Xu：MCC → PCC（客户 2026-09-30 确认徐莉俐不是 MCC）"
+ },
+ {
+  "page": "/brand-courses-coach-social-theater",
+  "find": "徐莉俐 Lili Xu</p>\n    <div style=\"color:#198264;display:flex;font-size:.75rem;line-height:1.25rem;margin:0.5rem 0;\">\n     <div class=\"team-cc\" style=\"background-color:#75BCA7;border-radius:6.25rem;padding:0 0.25rem;\">\n      <strong>MCC</strong>",
+  "replace": "徐莉俐 Lili Xu</p>\n    <div style=\"color:#198264;display:flex;font-size:.75rem;line-height:1.25rem;margin:0.5rem 0;\">\n     <div class=\"team-cc\" style=\"background-color:#75BCA7;border-radius:6.25rem;padding:0 0.25rem;\">\n      <strong>PCC</strong>",
+  "note": "徐莉俐 Lili Xu：MCC → PCC（客户 2026-09-30 确认徐莉俐不是 MCC）"
+ }
+]

@@ -25,15 +25,18 @@
 - 模板有变化时会自动重启新站（约 10–20 秒），首页恢复 200 才算成功；重启后打不开会自动换回原模板并再重启。
 - 重启用 `scripts/restart-jpress.sh`，不要用新站目录里的 `jpress.sh stop`：它按路径杀进程，远程调用时会连调用者一起杀掉，导致新站起不来。
 
-## 改网站内容（文章、首页区块、图片替代文字）
+## 改网站内容（文章、首页区块、图片替代文字、页面文字、导师页）
 
 内容存在新站数据库里，也走仓库：
 
-1. 在 `content/` 里改：文章放 `content/articles/<网址别名>/`（article.html、meta.json、cover.jpg）；首页区块写在 `content/homepage-blocks.json`；图片替代文字来源放 `content/sources/`。
-2. 生成变更清单：`python3 scripts/content-build.py content/changes/<日期-名字>.json`（对照数据库当前内容，写出精确的“原内容 → 新内容”）。
+1. 在 `content/` 里改：文章放 `content/articles/<网址别名>/`（article.html、meta.json、cover.jpg）；首页区块写在 `content/homepage-blocks.json`；图片替代文字来源放 `content/sources/`；其他页面改动写在 `content/edits/*.json`，每条一种写法：
+   - 页面里替换一段文字：`{"page": "/profile", "find": "原文", "replace": "新文", "note": "说明"}`
+   - 整个字段换成新值：`{"page": "/article/13", "field": "meta_description", "set": "新值"}`，或内容取自文件：`"set_file": "edits/tutors/13.html"`
+   - 改导师页标签：`{"article": 18, "tags_remove": ["ICF PCC"], "tags_add": ["ICF MCC"]}`
+2. 生成变更清单：`python3 scripts/content-build.py content/changes/<日期-名字>.json`（对照数据库当前内容，写出精确的“原内容 → 新内容”；已经是新内容的自动跳过。只想看某几类改动时加 `--from edits,certs` 之类）。
 3. 提交并推送到 GitHub。
 4. 执行：`python3 scripts/content-apply.py content/changes/<清单>.json`（先核对，全部对上才在一个事务里写库，写前自动备份到 /root/cccoach_content_backup/，写完重启新站刷新缓存）。先加 `--dry-run` 看计划。
-5. 回退：同一命令加 `--revert`（区块和替代文字改回原样，本清单发布的文章改为草稿）。
+5. 回退：同一命令加 `--revert`（区块、文字、整段改写、标签都改回原样，本清单发布的文章改为草稿）。改过的页面会同时更新“修改时间”，页面头部的字节时间标签随之变化。
 
 数据库连接用 `scripts/cc_db.py`：直接读新站配置里的账号，密码不打印、不落盘。
 

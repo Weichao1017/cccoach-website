@@ -64,6 +64,15 @@ CHECKS = [
  ('/robots.txt', 'robots 不拦任何 AI 爬虫、站点地图写完整网址', lambda h: 'Sitemap: https://www.cccoach.cn/sitemap.xml' in h and not re.search(r'(?i)user-agent:\s*(gptbot|claudebot|perplexitybot|bytespider)', h)),
  ('/llms.txt', 'llms.txt 含三篇新文章', lambda h: all(s in h for s in ['icf-coaching-career-block', 'new-coach-first-100-hours', 'icf-cce-credits-renewal'])),
  ('/sitemap.xml', '站点地图含三篇新文章、全是 https', lambda h: all(s in h for s in ['icf-coaching-career-block', 'new-coach-first-100-hours', 'icf-cce-credits-renewal']) and 'http://www.cccoach.cn' not in h),
+
+ # v10（2026-09-30）：获奖文字按证书、导师简介、字节时间标签
+ ('/profile', '获奖文字按证书原件（最具传播力奖、最佳组织奖）', lambda h: all(x in text_of(h) for x in ['最具传播力奖', '最佳组织奖', '中国教练服务机构5强']) and '特别贡献奖' not in text_of(h)),
+ ('/article/13', '刘东导师页：页面描述是简介（含飞利浦）', lambda h: '飞利浦' in (re.findall(r'name="description" content="([^"]*)"', h) or [''])[0]),
+ ('/article/13', '导师人物结构化数据含简介', lambda h: any(d.get('@type') == 'Person' and '飞利浦' in d.get('description', '') for d in lds(h))),
+ ('/article/13', '字节时间标签（发布、更新）', lambda h: re.search(r'property="bytedance:published_time" content="\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\+08:00"', h) is not None and 'bytedance:updated_time' in h),
+ ('/brand-courses-dialogue', '单页字节更新时间标签', lambda h: re.search(r'property="bytedance:updated_time" content="\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\+08:00"', h) is not None),
+ ('/profile', '改过的单页更新时间是今天', lambda h: re.search(r'property="bytedance:updated_time" content="2026-09-30T', h) is not None),
+ ('/article/icf-coaching-career-block', '文章字节时间标签', lambda h: 'bytedance:published_time' in h and 'bytedance:updated_time' in h),
 ]
 pages = sorted({p for p, _, _ in CHECKS})
 res = {}

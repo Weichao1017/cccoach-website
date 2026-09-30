@@ -4,7 +4,7 @@
 所有写入放在一个事务里；写之前把涉及的原内容备份到 /root/cccoach_content_backup/；写完重启新站刷新缓存。
 
 用法：content-apply.py <清单.json> [--revert] [--dry-run] [--no-restart]
-  --revert      反向执行（区块、替代文字改回原样；本清单发布的文章改为草稿下线）
+  --revert      反向执行（区块、文字、整段改写、标签都改回原样；本清单发布的文章改为草稿下线）
   --dry-run     只核对、列出计划，不写库
 """
 import json
@@ -108,9 +108,48 @@ def main():
         if newv != cur:
             backups['%s-%s-%s.html' % (table, val, field)] = cur
             sql.append('UPDATE %s SET %s=%s WHERE %s;' % (table, field, hexs(newv), where))
+            if table in ('article', 'single_page'):
+                sql.append('UPDATE %s SET modified=NOW() WHERE %s;' % (table, where))
+
+    # 2b) 整段改写（字段整个换成新值）
+    for o in [o for o in M['ops'] if o['type'] == 'set']:
+        (col, val), = o['key'].items()
+        where = '%s=%s' % (col, sqlstr(val))
+        old, new = (o['new'], o['old']) if revert else (o['old'], o['new'])
+        rows = q("SELECT JSON_OBJECT('v', %s) FROM %s WHERE %s" % (o['field'], o['table'], where))
+        if len(rows) != 1:
+            conflicts.append('%s %s 找不到或不唯一' % (o['table'], where))
+            continue
+        cur = rows[0]['v'] or ''
+        if cur == new:
+            plan.append('跳过（已是目标内容）  %s %s %s：%s' % (o['table'], val, o['field'], o.get('note', '')))
+        elif cur == (old or ''):
+            backups['%s-%s-%s.txt' % (o['table'], val, o['field'])] = cur
+            sql.append('UPDATE %s SET %s=%s WHERE %s;' % (o['table'], o['field'], hexs(new), where))
+            if o['table'] in ('article', 'single_page'):
+                sql.append('UPDATE %s SET modified=NOW() WHERE %s;' % (o['table'], where))
+            plan.append('改写  %s %s %s：%s' % (o['table'], val, o['field'], o.get('note', '')))
+        else:
+            conflicts.append('%s %s 的 %s 现在的内容和清单对不上（有人改过？）' % (o['table'], val, o['field']))
+
+    # 2c) 导师页标签
+    cats = set()
+    for o in [o for o in M['ops'] if o['type'] == 'mapping']:
+        aid = int(o['article_id'])
+        rm, add = (o['add'], o['remove']) if revert else (o['remove'], o['add'])
+        have = {r['c'] for r in q("SELECT JSON_OBJECT('c', category_id) FROM article_category_mapping WHERE article_id=%d" % aid)}
+        if all(c not in have for c in rm) and all(c in have for c in add):
+            plan.append('跳过（已是目标标签）  文章 %d：%s' % (aid, o.get('note', '')))
+            continue
+        backups['article_category_mapping-%d.json' % aid] = json.dumps(sorted(have))
+        for c in rm:
+            sql.append('DELETE FROM article_category_mapping WHERE article_id=%d AND category_id=%d;' % (aid, int(c)))
+        for c in add:
+            sql.append('INSERT IGNORE INTO article_category_mapping (article_id, category_id) VALUES (%d, %d);' % (aid, int(c)))
+        cats.update(int(c) for c in rm + add)
+        plan.append('改标签  文章 %d：%s' % (aid, o.get('note', '')))
 
     # 3) 文章
-    cats = set()
     for o in [o for o in M['ops'] if o['type'] == 'article']:
         d = os.path.join(ROOT, o['dir'])
         meta = json.load(open(os.path.join(d, 'meta.json'), encoding='utf-8'))

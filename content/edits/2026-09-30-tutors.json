@@ -1,0 +1,602 @@
+[
+ {
+  "page": "/article/2",
+  "field": "content",
+  "set_file": "edits/tutors/2.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/2",
+  "field": "meta_description",
+  "set": "Zoran Todorovic，ICF MCC，TNM 国际教练主席，谷歌、Facebook、LV、微软等集团的高管教练。进化教练由以他为首的十几位大师级教练自 2000 年起共创，2013 年由创问独家引进中国；他在创问担任《进化教练》《高阶进化教练》课程和 MCC认证班导师。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/4",
+  "field": "content",
+  "set_file": "edits/tutors/4.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/4",
+  "field": "meta_description",
+  "set": "Lisa Wynn，创问核心导师，ICF MCC，在创问担任《PCC直通车》《进化教练》课程导师。她多年担任 ICF 认证考官，两度荣获英国年度高管教练，著有《专业级教练》（PCC认证手册）；有 15 年认证教练经验。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/5",
+  "field": "content",
+  "set_file": "edits/tutors/5.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/5",
+  "field": "meta_description",
+  "set": "Marcia Reynolds 博士，ICF MCC，国际教练联合会（ICF）第五任主席，在创问担任《成为演说家》课程导师，也是《进化教练》课程和 MCC认证班导师。她是组织心理学博士、认证演说专家（CSP），在 41 个国家做过教练和培训，有 25 年一对一和团体教练辅导经验。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/6",
+  "field": "content",
+  "set_file": "edits/tutors/6.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/6",
+  "field": "meta_description",
+  "set": "Amos Szeps，ICF MCC，英国高管教练、注册职业心理学家，在创问担任《进化教练》课程导师。他与 CEO 及其团队合作了二十年，为阿斯利康、BBC、巴宝莉、德意志银行等跨国企业高层提供过教练服务，超过 15,000 人参加过他主持的教练工作坊。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/7",
+  "field": "content",
+  "set_file": "edits/tutors/7.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/7",
+  "field": "meta_description",
+  "set": "Nancy Hughes（南希），ICF MCC，高管教练，在创问担任《进化教练》课程和 MCC认证班导师。她在领导力发展领域有超过 25 年经验，主要为大型跨国组织的高级领导者做教练，对象从 CEO 到高级副总裁、总监和高潜力经理。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/8",
+  "field": "content",
+  "set_file": "edits/tutors/8.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/8",
+  "field": "meta_description",
+  "set": "Jean-François Cousin，ICF MCC，国际教练联合会（ICF）前任主席，在创问担任《进化教练》课程和 MCC认证班导师。他此前在一家财富 500 强公司任管理职位，服务于亚洲和欧洲，2006 年成为全球高管教练；截至 2020 年 6 月累计教练 12000 小时。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/9",
+  "field": "content",
+  "set_file": "edits/tutors/9.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/9",
+  "field": "meta_description",
+  "set": "Otto Scharmer 博士，U 型理论提出者，麻省理工学院斯隆管理学院高级讲师，Presencing Institute 创始人，著有《U理论》。2014 年，他和彼得·圣吉在创问开启 U School。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/10",
+  "field": "content",
+  "set_file": "edits/tutors/10.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/10",
+  "field": "meta_description",
+  "set": "Arawana Hayashi，社会大剧院创始人、自然流现研究院联合创始人，在创问担任《社会大剧院》课程导师。她是编舞者、表演者和教育家，践行正念近 50 年。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/11",
+  "field": "content",
+  "set_file": "edits/tutors/11.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/11",
+  "field": "meta_description",
+  "set": "徐莉俐（Lili Xu），创问《纯净PCC》核心导师、《社会大剧院》课程导师，ICF PCC。她是麻省理工学院 u.lab 中国首席代表、MoWa 价值共生系统创始合伙人，2012 年起带领中国团队，服务工行、复星、阿里巴巴、蚂蚁金服等组织的组织发展和领导力提升。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/12",
+  "field": "content",
+  "set_file": "edits/tutors/12.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/12",
+  "field": "meta_description",
+  "set": "贺拥军（Jeff），创问首席督导教练、考官，ICF MCC。有 20 多年全球 500 强企业管理经验，历任研发、销售、人力资源总监等职务。教练时数 3000+ 小时，督导时数 500+ 小时。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/13",
+  "field": "content",
+  "set_file": "edits/tutors/13.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/13",
+  "field": "meta_description",
+  "set": "刘东（Dana），创问认证考官、督导。曾在飞利浦工作二十余年，任大中华区人力资源高级总监，后任新加坡金鹰集团人力资源总经理。教练时数 2600+ 小时，督导时数 550+ 小时。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/14",
+  "field": "content",
+  "set_file": "edits/tutors/14.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/14",
+  "field": "meta_description",
+  "set": "隋于军（Allow），创问中国教练中心创始人、首席教练，ICF PCC，《纯净教练》流派开创者、《4C团队教练》创始人。有大型国企、奢侈品行业企业管理经验及创业经历。教练时数 6000+ 小时，督导时数 1000+ 小时。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/15",
+  "field": "content",
+  "set_file": "edits/tutors/15.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/15",
+  "field": "meta_description",
+  "set": "何朝霞（Tess），创问中国教练中心创始人、创问生态科技创始人，ICF PCC。有 20 年以上企业成人发展教育经验，服务过多家 500 强组织的高潜人才发展项目。教练时数 3000+ 小时，督导时数 500+ 小时。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/16",
+  "field": "content",
+  "set_file": "edits/tutors/16.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/16",
+  "field": "meta_description",
+  "set": "张丹（Denise），创问教练中心联合创始人，上海P&C国际头马俱乐部创始主席。做了11年教练成长顾问，7年里支持130+位学员获得PCC，为博世中国、中国电信、英特尔等企业做过教练培养。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/17",
+  "field": "content",
+  "set_file": "edits/tutors/17.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/17",
+  "field": "meta_description",
+  "set": "亢雅君（CK），创问生态科技创始合伙人，在创问《与教练对话》《PCC直通车》课程中任督导，ICF PCC。曾任丝芙兰（SEPHORA）、Tory Burch中国区CEO，做外企大中华区总经理10年以上。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/18",
+  "field": "content",
+  "set_file": "edits/tutors/18.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/18",
+  "field": "meta_description",
+  "set": "尤志欣（Eric），创问《与教练对话》《PCC直通车》课程导师，ICF MCC，PCC认证考试督导。曾任腾讯科技上海组织发展负责人、波司登集团领导力学院院长。教练时长2500+小时。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/19",
+  "field": "content",
+  "set_file": "edits/tutors/19.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/19",
+  "field": "meta_description",
+  "set": "张黎峻（Jane），创问生态科技合作伙伴、《纯净教练》核心授课导师，ICF PCC，ICF认证PCC辅导及督导教练。做过12年临床医生，在独资500强企业做过11年管理培训和教练。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/20",
+  "field": "content",
+  "set_file": "edits/tutors/20.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/20",
+  "field": "meta_description",
+  "set": "陆杰，创问成都教练中心负责人、《纯净教练》核心授课导师、《PCC直通车》督导。做过8年IT高管，在IT、贸易、环保、教育等领域创过业。一对一教练4000+小时。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/21",
+  "field": "content",
+  "set_file": "edits/tutors/21.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/21",
+  "field": "meta_description",
+  "set": "谢忠民（Mike），创问《纯净教练》核心授课导师，ICF PCC。1998-2008 年在创新科、华为、天音做营销管理，曾任创新科南区总经理、华为终端公司销售策划部副部长。教练小时数 1000+，督导小时数 100+。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/22",
+  "field": "content",
+  "set_file": "edits/tutors/22.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/22",
+  "field": "meta_description",
+  "set": "刘大为（Dave），创问《PCC直通车》督导，美国ICF PCC认证高管教练。从事商务演讲、国际会务和跨文化沟通的顾问、教练和培训工作22年，做过辉瑞制药中国特约国际会务顾问、博世中国内部TED演讲总教练和耐克中国内部年会演讲首席教练。教练约谈1700+小时。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/23",
+  "field": "content",
+  "set_file": "edits/tutors/23.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/23",
+  "field": "meta_description",
+  "set": "曹文炜（Annie），辅导/督导教练，ICF PCC。在葛兰素史克、诺华、天普、辉凌等药企有 23 年以上商业绩效优化、供应链、企业大学和团队管理经验，现任职大健康私募投后管理及投资人关系。教练小时数 1200+，督导小时数 600+。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/24",
+  "field": "content",
+  "set_file": "edits/tutors/24.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/24",
+  "field": "meta_description",
+  "set": "陈丽云（Cecilia），创问首期认证专业督导教练、纯净 ACC 直通车签约督导，ICF PCC。有 16 年以上企业培训管理经验，专注销售及销售管理团队的人才培养，另有 8 年以上企业中高管教练经验。教练时数 1800+，督导时数 350+。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/25",
+  "field": "content",
+  "set_file": "edits/tutors/25.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/25",
+  "field": "meta_description",
+  "set": "李华男（Lillian），创问《ACC直通车》课程导师，ICF PCC，获创问教练督导&辅导认证。有20年以上质量总监、人力资源总监管理经验，在企业内部做过金牌教练，是教练俱乐部创始人之一。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/26",
+  "field": "content",
+  "set_file": "edits/tutors/26.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/26",
+  "field": "meta_description",
+  "set": "李静（Catherine），创问第一期认证督导教练，ICF PCC。曾在 IBM、HP、普华永道 GDC、JABIL、APP 等外资 500 强企业做人力资源管理。教练时数 2500+，督导时数 500+。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/27",
+  "field": "content",
+  "set_file": "edits/tutors/27.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/27",
+  "field": "meta_description",
+  "set": "李小蓉（Shelly），创问《ACC直通车》课程导师，2020年通过PCC教练认证，上过创问辅导督导一班和创问MCC二班。从业20+年，做过企业运营、组织和人力资源、项目管理和团队管理，服务过世界500强、国企和民企。教练1000+小时，督导200+小时。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/28",
+  "field": "content",
+  "set_file": "edits/tutors/28.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/28",
+  "field": "meta_description",
+  "set": "清如（Gillian Liu），创问纯净教练导师、纯净 ACC 和 PCC 督导老师，ICF PCC。曾在世界 500 强医药行业前 10 强企业做销售及管理 10 年、培训及管理 11 年，任企业培训责任人。教练小时数 2500+，督导小时数 500+。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/29",
+  "field": "content",
+  "set_file": "edits/tutors/29.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/29",
+  "field": "meta_description",
+  "set": "王丽（Lily），创问中国教练中心北京合伙人，ICF PCC。有世界 500 强外企 10 年、民企及互联网创业公司近 8 年 HR 运营及管理经验，服务过拜耳医药、拜耳中国、安富利中国、蒙牛乳业等企业。教练小时数 1000+，辅导/督导小时数 400+。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/30",
+  "field": "content",
+  "set_file": "edits/tutors/30.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/30",
+  "field": "meta_description",
+  "set": "王艺萍，创问MCC一班学员、二班助教，ICF MCC，美团长期特聘高管教练，中欧商学院特聘导师。常年服务企业，专长领导力和组织发展，辅导过500+位百万年薪以上的职业经理人和创始人。教练3000+小时，辅导100+小时。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/31",
+  "field": "content",
+  "set_file": "edits/tutors/31.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/31",
+  "field": "meta_description",
+  "set": "魏晓明（Sunnymoon），创问生态科技核心教练、创问认证督导，ICF PCC，光源行动联合创始人。1999-2017 年在通信信息行业工作，有 6 年以色列通信公司技术经历和 9 年技术管理经验，组建并领导过跨国团队。教练小时数 2100+，督导小时数 200+。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/32",
+  "field": "content",
+  "set_file": "edits/tutors/32.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/32",
+  "field": "meta_description",
+  "set": "徐海玲（Helen），创问纯净 PCC 督导辅导教练、纯净共修教练，ICF PCC。在上海浦东软件园股份有限公司、Global Sources Ltd.、华岭股份工作过 18 年，曾任上市民企 HRD。教练小时数 1800+，督导小时数 250+。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/33",
+  "field": "content",
+  "set_file": "edits/tutors/33.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/33",
+  "field": "meta_description",
+  "set": "云在（Jessie），创问签约辅导督导教练，ICF PCC。25 年跨行业世界五百强公司人力资源管理经验，服务过飞利浦、西门子、空气化工、福特汽车等在华企业。教练小时数 2000+，辅导督导小时数 800+。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/34",
+  "field": "content",
+  "set_file": "edits/tutors/34.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/34",
+  "field": "meta_description",
+  "set": "葛筱鹂（Rachel），创问教练体系认证高管教练，ICF MCC，获得过全球ICF棱镜大奖。曾任阿尔卡特朗讯公司副总裁，负责中国区产品与研发市场及传播部，还在新桥网络、摩托罗拉、美西电信等跨国公司工作过。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/35",
+  "field": "content",
+  "set_file": "edits/tutors/35.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/35",
+  "field": "meta_description",
+  "set": "迟侃（Claire），创问教练体系认证高管教练，ICF PCC。做了18年管理咨询，曾任美世咨询（Mercer）大中华区合伙人、美世中国北方区领导力和人才发展业务负责人，也在德勤咨询、伟仕达中国、朗讯科技工作过。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/36",
+  "field": "content",
+  "set_file": "edits/tutors/36.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/36",
+  "field": "meta_description",
+  "set": "程昕（David），创问教练体系认证高管教练，ICF PCC。在ABB、汽巴精化（Ciba）、BD等世界500强公司做过财务中高管，在壳牌中国先后任五家合资公司总经理，离开壳牌后创业，组建冠德-车到集团。也是中国注册会计师。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/37",
+  "field": "content",
+  "set_file": "edits/tutors/37.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/37",
+  "field": "meta_description",
+  "set": "李迈之（Dr. Michael），创问教练体系认证高管教练。历任霍尼韦尔、杜邦、商米科技CEO和高管，有四个业务部的盈亏经验，覆盖北美、亚太和大中华区，擅长辅导即将或已经成为CEO的人。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/38",
+  "field": "content",
+  "set_file": "edits/tutors/38.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/38",
+  "field": "meta_description",
+  "set": "廖澄（Alex），创问教练体系认证高管教练。有20年销售和15年团队管理经验，曾任北电Nortel、博科Brocade等网络厂商华东区销售总经理和小i机器人运营副总裁。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/39",
+  "field": "content",
+  "set_file": "edits/tutors/39.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/39",
+  "field": "meta_description",
+  "set": "庄磊（Eric），创问教练体系认证高管教练，ICF PCC，北斗数字化转型联合创始人、CEO。在欧美外企工作20多年，做过亚太区商务总监、亚太区市场总监，有7年企业数字化转型辅导经验。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/40",
+  "field": "content",
+  "set_file": "edits/tutors/40.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/40",
+  "field": "meta_description",
+  "set": "刘新（Sean），进化教练、创问4C团队教练，ICF PCC。在外企做了二十年业务管理和运营，历任区域销售总经理、运营总经理和大中华区服务销售副总裁，现任北京百森泰信管理顾问有限公司总经理。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/41",
+  "field": "content",
+  "set_file": "edits/tutors/41.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/41",
+  "field": "meta_description",
+  "set": "徐颖丽（Linda），北斗数字化转型联合创始人、COO，ICF PCC。有近30年人力资源和组织发展经验，曾任飞利浦、可口可乐组织发展和人力资源高管。教练时数2800+小时。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/42",
+  "field": "content",
+  "set_file": "edits/tutors/42.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/42",
+  "field": "meta_description",
+  "set": "殷海江，ICF PCC，深圳海江私董学院院长，法国蔚蓝海岸大学工商管理博士，上过创问进化教练七班和MCC一班。有八年军工和九年创业经历，做过民企集团大学校长，2001年开始从事教练、咨询和培训。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/43",
+  "field": "content",
+  "set_file": "edits/tutors/43.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/43",
+  "field": "meta_description",
+  "set": "王飞，ICF PCC，ICF认证进化教练、4C团队教练，电子工程专业博士。在外企500强工作20多年，其中10多年任高管，做过集团驻亚太区总经理，带过400多人的团队。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/44",
+  "field": "content",
+  "set_file": "edits/tutors/44.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/44",
+  "field": "meta_description",
+  "set": "陈悦（Joy），ICF PCC，上过中国MCC一班，格桑教练督导体系专业认证督导。有12年五百强零售跨国公司中国区市场管理经验，做过宜家中国区教练领导力及团队发展项目经理。一对一和团队教练累计2500+小时。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/45",
+  "field": "content",
+  "set_file": "edits/tutors/45.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/45",
+  "field": "meta_description",
+  "set": "毕聪敏（Vicky），高级进化教练，ICF PCC，《重塑组织》《自由企业》译者。有 14 年以上千亿级集团企业管理经验，多年与创始人及其直属高管团队共事。教练小时数 2000+。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/46",
+  "field": "content",
+  "set_file": "edits/tutors/46.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/46",
+  "field": "meta_description",
+  "set": "张菁，ICF PCC，NCDA国际生涯发展学会生涯教练，国家二级心理咨询师。在战略咨询、兼并收购、业务发展、销售管理和人才发展等领域工作20多年，做过外企亚太区学习和人才发展负责人。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/47",
+  "field": "content",
+  "set_file": "edits/tutors/47.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/47",
+  "field": "meta_description",
+  "set": "岳三峰（Sam），ICF认证中PCC级别教练，清华大学MBA。曾任北大纵横、和君咨询合伙人和腾讯组织发展总监，有13年管理咨询和9年互联网公司OD/TD经验。教练时数1000+小时。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/48",
+  "field": "content",
+  "set_file": "edits/tutors/48.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/48",
+  "field": "meta_description",
+  "set": "刘燕，ICF PCC，“U型理论”社会大剧院（STP）认证导师。做过国际咨询公司全国数字营销总监、国内营销咨询机构总经理和智能家居创业企业CEO。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/49",
+  "field": "content",
+  "set_file": "edits/tutors/49.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/49",
+  "field": "meta_description",
+  "set": "王喆（Jerry），ICF ACC，ICF认证进化教练、潜能教练。有15年心理学实践，曾在萨提亚河南中心和一家教练平台任职。教练时长500小时。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/50",
+  "field": "content",
+  "set_file": "edits/tutors/50.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/50",
+  "field": "meta_description",
+  "set": "范菁（Janet），ICF国际认证进化教练、4C团队教练、财富教练，PCC认证中。有20余年医疗行业销售管理经验，是JOY家庭财务工作室创始人。教练时长500+小时。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/51",
+  "field": "content",
+  "set_file": "edits/tutors/51.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/51",
+  "field": "meta_description",
+  "set": "张天霞（Jenny），创问中国教练中心加拿大合伙人，持加拿大特许人力资源专家认证（CPHR）。做过15年世界500强HR业务伙伴，在加拿大有4年HR管理经历。一对一教练实践450+小时。",
+  "note": "导师页描述＝简介"
+ },
+ {
+  "page": "/article/52",
+  "field": "content",
+  "set_file": "edits/tutors/52.html",
+  "note": "导师页补全背景（简介、高管履历、教练资历）"
+ },
+ {
+  "page": "/article/52",
+  "field": "meta_description",
+  "set": "沈宗毅（Sim），ICF MCC，持ICF MCS教练辅导专业资质，删拾教练联合创始人、365教练成长陪伴计划首席导师。教练时数2600+小时，教练辅导（Mentor Coaching）时数1500+小时。",
+  "note": "导师页描述＝简介"
+ }
+]
