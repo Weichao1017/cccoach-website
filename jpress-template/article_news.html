@@ -1,0 +1,57 @@
+#include("./layout.html")
+#@layout()
+
+#define css()
+<style>
+    .main-container {
+        height: calc(100% - 6.25rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-title {
+        font-weight: bold;
+        font-size: 2.1875rem /* 35/16 */;
+        text-align: center;
+        padding-top: 5.9375rem /* 95/16 */;
+        color: #007855;
+        border-bottom: .125rem /* 2/16 */ solid #D9DFD6;
+        padding-bottom: 1rem;
+    }
+    .content-box {
+        flex:1;
+        width:62rem;
+        margin: 2rem 0;
+        border-radius: 4px;
+        padding:1rem;
+        background-color: #fafafa;
+    }
+    
+    
+      /* ========== 平板竖屏 / 小Pad（600px ~ 767px）========== */
+  @media screen and (max-width: 767px) {
+    .content-box {
+        width: 90%;
+    }
+  }
+
+  /* ========== 大屏手机（414px ~ 599px）iPhone 11/12/13/14/15, 大屏安卓 ========== */
+  @media screen and (max-width: 599px) {
+      .content-box {
+          width: 100%;
+      }
+  }
+</style>
+#end
+
+
+#define content()
+<div class="fixd-h main-container bg_EAF1E7">
+    <div class="content-title">
+        #(article.title ??)
+    </div>
+    <div class="content-box">
+        #(article.content ??)
+    </div>
+</div>
+#end

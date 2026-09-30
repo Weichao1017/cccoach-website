@@ -1,0 +1,91 @@
+<!--name: 主题Banner-教练-->
+<!--type:template -->
+<!--icon: bi bi-card-image-->
+
+<div style="position: relative;display: flex;justify-content: space-around;align-items: center;width: 100%;height: 100%;background-color: #184348">
+    <div style="height: 85%;display: flex;align-items: flex-end;position: relative;width:#blockOption('图1宽度','20%')">
+        #if(blockOption('图片1链接'))
+        <a href="#blockOption('图片1链接')" target="#blockOption('打开方式:target')">
+            <img class="bl-card_select" src="#blockOption('图片1:image','/static/commons/img/nothumbnail.jpg')" style="max-width: 100%" >
+        </a>
+        #else
+        <img class="bl-card_select" src="#blockOption('图片1:image','/static/commons/img/nothumbnail.jpg')" style="max-width: 100%" >
+        #end
+        <div style="position: absolute;right:13rem;bottom: 20rem;width: 20rem;text-align: right;color: #75bca7">
+            <p style="line-height: 2rem;font-size: 1.5rem">
+                #blockOption('教练名称1')
+            </p>
+            <p style="font-size: 0.725rem;line-height: 1.5rem;color: #fff;">
+                #unescape(blockOption('教练内容1:textarea'))
+            </p>
+        </div>
+    </div>
+    <div style="height: 85%;display: flex;align-items: flex-start;position: relative;width:#blockOption('图2宽度','20%')">
+        #if(blockOption('图片2链接'))
+        <a href="#blockOption('图片2链接')" target="#blockOption('打开方式:target')">
+            <img class="bl-card_select" src="#blockOption('图片2:image','/static/commons/img/nothumbnail.jpg')" style="max-width: 100%" >
+        </a>
+        #else
+        <img class="bl-card_select" src="#blockOption('图片2:image','/static/commons/img/nothumbnail.jpg')" style="max-width: 100%" >
+        #end
+        <div style="position: absolute;top:3rem;right: -20rem;width: 20rem;text-align: left;color: #75bca7">
+            <p style="line-height: 2rem;font-size: 1.5rem">
+                #blockOption('教练名称2')
+            </p>
+            <p style="font-size: 0.725rem;line-height: 1.5rem;color: #fff;">
+                #unescape(blockOption('教练内容2:textarea'))
+            </p>
+        </div>
+    </div>
+    <div style="height: 85%;display: flex;align-items: flex-end;position: relative;width:#blockOption('图3宽度','20%')">
+        #if(blockOption('图片3链接'))
+        <a href="#blockOption('图片3链接')" target="#blockOption('打开方式:target')">
+            <img class="bl-card_select" src="#blockOption('图片3:image','/static/commons/img/nothumbnail.jpg')" style="max-width: 100%" >
+        </a>
+        #else
+        <img class="bl-card_select" src="#blockOption('图片3:image','/static/commons/img/nothumbnail.jpg')" style="max-width: 100%" >
+        #end
+        <div style="position: absolute;bottom:2rem;left: -14rem;width: 20rem;text-align: right;color: #75bca7">
+            <p style="line-height: 2rem;font-size: 1.5rem">
+                #blockOption('教练名称3')
+            </p>
+            <p style="font-size: 0.725rem;line-height: 1.5rem;color: #fff;">
+                #unescape(blockOption('教练内容3:textarea'))
+            </p>
+        </div>
+    </div>
+    <div style="height: 85%;display: flex;align-items: flex-start;position: relative;width:#blockOption('图4宽度','20%')">
+        #if(blockOption('图片4链接'))
+        <a href="#blockOption('图片4链接')" target="#blockOption('打开方式:target')">
+            <img class="bl-card_select" src="#blockOption('图片4:image','/static/commons/img/nothumbnail.jpg')" style="max-width: 100%" >
+        </a>
+        #else
+        <img class="bl-card_select" src="#blockOption('图片4:image','/static/commons/img/nothumbnail.jpg')" style="max-width: 100%" >
+        #end
+        <div style="position: absolute;bottom:6rem;right: 0;width: 20rem;text-align: right;color: #75bca7">
+            <p style="font-size: 1.5rem;line-height: 2rem">
+                #blockOption('教练名称4')
+            </p>
+            <p style="font-size: 0.725rem;line-height: 1.5rem;color: #fff;">
+                #unescape(blockOption('教练内容4:textarea'))
+            </p>
+        </div>
+    </div>
+    <div style="height: 85%;display: flex;align-items: flex-end;position: relative;width:#blockOption('图片5宽度','20%')">
+        #if(blockOption('图片5链接'))
+        <a href="#blockOption('图片5链接')" target="#blockOption('打开方式:target')">
+            <img class="bl-card_select" src="#blockOption('图片5:image','/static/commons/img/nothumbnail.jpg')" style="max-width: 100%" >
+        </a>
+        #else
+        <img class="bl-card_select" src="#blockOption('图片5:image','/static/commons/img/nothumbnail.jpg')" style="max-width: 100%" >
+        #end
+        <div style="position: absolute;bottom:1rem;right: 2rem;width: 20rem;text-align: right;color: #75bca7">
+            <p style="font-size: 1.5rem;line-height: 2rem">
+                #blockOption('教练名称5')
+            </p>
+            <p style="font-size: 0.725rem;line-height: 1.5rem;color: #fff;">
+                #unescape(blockOption('教练内容5:textarea'))
+            </p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,103 @@
+#include("./layout.html")
+#@layout()
+
+#define css()
+<link href="#(CPATH)/static/components/ckeditor5/ck-content.css" rel="stylesheet">
+<style>
+  .container-iframe {
+    width: 80rem;
+    height: 100vh;
+    margin: 0 auto;
+    padding-bottom:4rem;
+  }
+    .container-iframe iframe {
+    width: 100%;
+    height: 100%;
+    border-style: none;
+    border-radius: 4px;
+  }
+  
+    .text-line {
+      color: #198264;
+      text-align: center;
+      max-width: 60rem;
+      margin: 0 auto 4rem;
+      text-wrap: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+  }
+  
+  .title {
+      border-bottom:.125rem solid #00000033;
+      font-size:2.1875rem;
+      padding-bottom:1rem;
+  }
+
+  /* ========== 平板竖屏 / 小Pad（600px ~ 767px）========== */
+  @media screen and (max-width: 767px) {
+    .container-iframe {
+        width: 90%;
+    }
+  }
+
+  /* ========== 大屏手机（414px ~ 599px）iPhone 11/12/13/14/15, 大屏安卓 ========== */
+  @media screen and (max-width: 599px) {
+      .container-iframe {
+          width: 100%;
+      }
+  }
+
+</style>
+#end
+
+
+#define content()
+<div class="fixd-h" style="background-color:#EAF1E7;height:100%;padding-top:2rem;width:100%;">
+  <div style="padding-bottom:3.125rem;">
+    <p class="text-line">
+          <span class="title"><strong>#(page.title ??)</strong></span>
+    </p>
+    <div class="container-iframe">
+        <iframe id="iframe" src="#('#')">
+        </iframe>
+    </div>
+  </div>
+</div>
+<script id="page-title" type="text/plain">
+  #(page.content ??)
+</script>
+#end
+
+#define script()
+<script>
+  /**
+   * 读取 id="page-title" 的内容，并去除所有 HTML 标签，只返回纯文本
+   * @returns {string} 纯文本内容
+   */
+  function getContentText() {
+    var el = document.getElementById('page-title');
+    if (!el) return '';
+
+    // 获取 innerHTML（type="text/plain" 的 script 标签内容，浏览器不会解析）
+    var htmlContent = el.innerHTML || el.textContent || '';
+
+    // 去除所有 HTML 标签
+    var tempDiv = document.createElement('div');
+    tempDiv.innerHTML = htmlContent;
+    var plainText = tempDiv.textContent || tempDiv.innerText || '';
+
+    // 去掉首尾空白字符和多余换行
+    return plainText.trim().replace(/\s+/g, ' ');
+  }
+
+  // 使用示例
+  var iframeSrc = getContentText();
+  var iframeEl = document.getElementById('iframe');
+  iframeEl.src = iframeSrc;
+</script>
+#end
+
+
+
+
+

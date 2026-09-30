@@ -1,0 +1,44 @@
+#include("./layout.html")
+#@layout()
+
+#define css()
+<link type="text/css" rel="stylesheet" href="#(CPATH)#(TPATH)/css/teaching.css?_1645215125652" />
+#end
+
+#define content()
+<div class="fixd-h">
+    <div class="c-r-s bg_EAF1E7">
+        <div class="c-jl color_0F4B3C title">
+            创问·#(category.title ??)
+        </div>
+        <div class="c-hg b_b-D6"></div>
+        <div class="c-r-w">
+            <div class="c-j-c">
+                #categoryArticles(categoryId = category.id,count = 1000, orderBy = "order_number asc,id asc")
+                #for(article : articles)
+                <div class="c-r-rp" style="cursor: pointer" ONCLICK="location.href='#(article.url??)'">
+                    <a href="#(article.url??)">
+                        <div class="c-r-ig" style="background: url('#(article.thumbnail ??)') no-repeat center; background-size: cover;"></div>
+                    </a>
+                    <div class="c-r-p">
+                        #(article.title ??)
+                    </div>
+                    #articleCategories(article.id,"tag")
+                        #if(categories.size() > 2)
+                        <div class="bg_64 c-bq-tree c-p-mun">#(categories.get(2).title ??)</div>
+                        #end
+                        #if(categories.size() > 1)
+                        <div class="bg_64 c-bq-o c-p-mun">#(categories.get(1).title ??)</div>
+                        #end
+                        #if(categories.size() > 0)
+                        <div class="bg_64 c-bq c-p-mun">#(categories.get(0).title ??)</div>
+                        #end
+                    #end
+                </div>
+                #end
+                #end
+            </div>
+        </div>
+    </div>
+</div>
+#end

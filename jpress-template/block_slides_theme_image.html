@@ -1,0 +1,42 @@
+<!--name: 主题Banner-image-->
+<!--type:template -->
+<!--icon: bi bi-card-image-->
+
+<div style="position: relative;display: flex;width: 100%;">
+    #if(blockOption('图片位置','right') == 'right')
+    <div style="text-align: right;padding: 8rem 3rem;position: relative;#blockOption('文本框Style','width:50%')">
+        <p class="bl-block_carousel_banner_text">#(unescape(blockOption('文本内容:textarea')))</p>
+    </div>
+    <div style="position: relative;z-index: 100">
+        #if(blockOption('修饰图型:image'))
+        <a href="#blockOption('图片链接')" target="#blockOption('打开方式:target')">
+            <img style="position: absolute;bottom: 0;height: 56%;left: #blockOption('图型位置','-15rem');" src="#blockOption('修饰图型:image','/static/commons/img/nothumbnail.jpg')">
+        </a>
+        #end
+    </div>
+    <div style="text-align: left;border-top-left-radius: 6.25rem;position: relative;#blockOption('图片框Style','width: 50%')">
+        <a href="#blockOption('图片链接')" target="#blockOption('打开方式:target')">
+            <img style="width: 100%;" src="#blockOption('选择图片:image','/static/commons/img/nothumbnail.jpg')" alt="banner.png" srcset="">
+            #if(blockOption('修饰图型:image'))
+            <img class="bl-block_carousel_banner_image-graph" style="left: #blockOption('图型位置','-15rem');" src="#blockOption('修饰图型:image','/static/commons/img/nothumbnail.jpg')">
+            #end
+        </a>
+    </div>
+    #else
+    <div style="text-align: right;position: relative;#blockOption('图片框Style','width: 50%')">
+        <a href="#blockOption('图片链接','#')" target="#blockOption('打开方式:target')">
+            <img style="width: 100%;" src="#blockOption('选择图片:image','/static/commons/img/nothumbnail.jpg')" alt="banner.png" srcset="">
+        </a>
+    </div>
+    <div style="position: relative;z-index: 100">
+        #if(blockOption('修饰图型:image'))
+        <a href="#blockOption('图片链接')" target="#blockOption('打开方式:target')">
+            <img style="position: absolute;bottom: 0;height: 56%;left: #blockOption('图型位置','-15rem');" src="#blockOption('修饰图型:image','/static/commons/img/nothumbnail.jpg')">
+        </a>
+        #end
+    </div>
+    <div style="text-align: left;padding: 8rem 3rem;border-top-left-radius: 6.25rem;position: relative;#blockOption('文本框Style','width: 50%')">
+        <p class="bl-block_carousel_banner_text">#blockOption('文本内容:textarea')</p>
+    </div>
+    #end
+</div>

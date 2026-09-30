@@ -1,0 +1,185 @@
+#define layout()
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>#(SEO_TITLE ?? (WEB_TITLE + ' - ' + WEB_SUBTITLE))</title>
+    <meta name="referrer" content="always"/>
+    <meta name="keywords" content="#(SEO_KEYWORDS)">
+    <meta name="description" content="#(SEO_DESCRIPTION)">
+    <link href="#(CPATH)#(TPATH)/css/header.css?_1645215125652" rel="stylesheet">
+    <link href="#(CPATH)#(TPATH)/css/footer.css" rel="stylesheet">
+    <link href="#(CPATH)#(TPATH)/img/icon.ico" type="image/x-icon" rel="shortcut icon">
+    <link type="text/css" rel="stylesheet" href="#(CPATH)#(TPATH)/js/ckplayer/css/ckplayer.css" />
+    <link href="#(CPATH)/static/components/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    #@css?()
+    <link rel="stylesheet" href="#(CPATH)#(TPATH)/css/bl-css.css?_1645215125653">
+</head>
+<body>
+<div class="container" id="app">
+    <header>
+        <div class="bg_007855 h_h fx-a-c">
+            <div class="cl-logo" onclick="window.location.href='#(CPATH)/'" style="cursor: pointer;">
+                <img class="h-g" src="#(option('bonhumeur_web_avatar') ?? (CPATH+'/static/commons/img/icon.png'))" alt="" srcset="">
+            </div>
+            <div class="h-u color_fff" id="bl-default-menu">
+                <button class="navbar-collapse-button navbar-toggler" type="button">
+                    <span class="bi bi-list"></span>
+                </button>
+                <div class="bl-menu-content navbar-collapse">
+                    <ul class="bl-menu navbar-nav">
+                        #for(menu : MENUS)
+                        <li class="c_w_r nav-item #(menu.isActive?'menu_active':'')">
+                            <a href="#(menu.hasChild()?'#':menu.url ??)" class="navbar-toggler #(menu.hasChild()?'has-arrow':'')" style="text-decoration:none;color:#fff;">
+                                #(menu.text ??)
+                            </a>
+                            #if(menu.hasChild())
+                            <div class="c_w bg_F8FAF6 color_285647 bl-menu_content navbar-collapse">
+                                <div class="c_w_pad navbar-nav">
+                                    <div class="c_w_t color_285647">
+                                        创问&nbsp;#(menu.text ??)
+                                    </div>
+                                    <div class="c_w_p bl-menu_container">
+                                        <div class="c_w_m">
+                                            #(menu.extra ??)
+                                        </div>
+                                        <div class="bl-menu_menus bl-menu_column-count-2">
+                                            #for(childMenu : menu.getChilds())
+                                            <div class="bl-menu_menus-items">
+                                                <div class="bl-menu_menus-item">
+                                                    #if(childMenu.icon??)
+                                                    <div class="c_w_gt fx-a-c">
+                                                        <img class="l_img" src="#(childMenu.icon ??)" alt="#(childMenu.text ??)" srcset="">
+                                                    </div>
+                                                    <div class="c_w_gt fx-a-c color_285647 c_w_g">
+                                                        <a href="#(childMenu.url ??)">#(childMenu.text ??)</a>
+                                                    </div>
+                                                    #else
+                                                    <div class="c_w_gt fx-a-c">
+                                                        <div class="l_img mg_t">
+                                                            <div class="c_w_d"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="c_w_gt fx-a-c c_w_g c_w_t_t">
+                                                        <a href="#(childMenu.url ??)">#(childMenu.text ??)</a>
+                                                    </div>
+                                                    #end
+                                                </div>
+                                                #if(childMenu.hasChild())
+                                                <div class="bl-menu_menus-childs bl-menu_column-count-#(childMenu.getChilds().size()/4 + (childMenu.getChilds().size()%4 > 0 ? 1 : 0))">
+                                                    #for(cChild : childMenu.getChilds())
+                                                    <div class="bl-menu_menus-childs-item">
+                                                        <div class="c_w_gt fx-a-c">
+                                                            <div class="l_img mg_t">
+                                                                <div class="c_w_d"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="c_w_gt fx-a-c c_w_g c_w_t_t">
+                                                            <a href="#(cChild.url ??)">#(cChild.text ??)</a>
+                                                        </div>
+                                                    </div>
+                                                    #end
+                                                </div>
+                                                #end
+                                            </div>
+                                            #end
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            #end
+                        </li>
+                        #end
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        #@content()
+    </section>
+    <footer>
+        <div class="bg_007855 fx-a-c-j-spb f-y-y footer-container">
+            <div class="f-c-tp fx-a-c-j-spb">
+                <div class="">
+                    <img class="f-t-ig" src="#(option('cccoach_web_bottom_logo') ?? (CPATH+'/static/commons/img/icon.png'))" alt="" srcset="">
+                </div>
+                <div>
+                    <div class="f-c-c">
+                        #for(menu : MENUS)
+                        #if(!for.first)
+                        <div class="f-su"></div>
+                        #end
+                        <div class="f-pm">
+                            <a href="#(menu.url ??)" style="color: #fff">#(menu.text ??)</a>
+                        </div>
+                        #end
+                    </div>
+                    <div class="f-c-c f-a-i t-n">
+                        <div class="f-t-b">
+                            友情链接
+                        </div>
+                        <div class="f-y">
+                            <a href="https://www.baidu.com/s?wd=#(option('cccoach_web_bottom_searchkeys'))">
+                                <div class="fx-a-c-j-spb" style="color: #fff;">
+                                    <div>
+                                        #(option('cccoach_web_bottom_searchkeys'))
+                                    </div>
+                                    <div>
+                                        百度
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="f-bn f-a-i">
+                        #(WEB_COPYRIGHT ?? 'Copyright © 2016 上海创问教练中心 版权所有 All Rights Reserved.') <a style="color: #fff" href="https://beian.miit.gov.cn/">#unescape(option('web_ipc_no'))</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="f-c-c">
+                        <div class="f-gz">
+                            <div>
+                                <img class="f-w-g" src="#(option('cccoach_web_bottom_wxpublic_qrcode') ?? (CPATH+'/static/commons/img/icon.png'))" alt="" srcset="">
+                            </div>
+                            <div class="f-p-z">
+                                创问公众号
+                            </div>
+                        </div>
+                        <div class="f-gz">
+                            <div>
+                                <img class="f-w-g" src="#(option('cccoach_web_bottom_wxvideo_qrcode') ?? (CPATH+'/static/commons/img/icon.png'))" alt="" srcset="">
+                            </div>
+                            <div class="f-p-z">
+                                创问视频号
+                            </div>
+                        </div>
+                    </div>
+<!--                    <div class="f-c-c">-->
+<!--                        <div class="f-gz">-->
+<!--                        </div>-->
+<!--                        <div class="f-gz f-jh">-->
+<!--                            <img class="f-w-g" src="../img/avatar.png" alt="" srcset="">-->
+<!--                        </div>-->
+<!--                    </div>-->
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="#(CPATH)/static/components/jquery/jquery.min.js"></script>
+<script src="#(CPATH)#(TPATH)/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="#(CPATH)#(TPATH)/js/scale.js"></script>
+<script src="#(CPATH)#(TPATH)/js/ckplayer/js/ckplayer.min.js"></script>
+<script src="#(CPATH)#(TPATH)/js/carousel.js"></script>
+<script src="#(CPATH)#(TPATH)/js/ccoacher.js"></script>
+<script src="#(CPATH)#(TPATH)/highlight/highlight.pack.js"></script>
+#@script?()
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>
+#end

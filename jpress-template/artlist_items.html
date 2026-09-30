@@ -1,0 +1,32 @@
+#include("./layout.html")
+#@layout()
+
+#define css()
+<link type="text/css" rel="stylesheet" href="#(CPATH)#(TPATH)/css/dimensional.css?_1645215125652" />
+#end
+
+
+#define content()
+<div class="fixd-h">
+    <div class="c-r-s ">
+        <div class="c-jl title">
+            创问·#(category.title??)
+        </div>
+        <div class="c-hg b_b-D6"></div>
+        <div class="c-r-w">
+            #categoryArticles(categoryId = category.id,count = 100, orderBy = "order_number asc,id asc")
+            #for(article : articles)
+            <div class="en-q bg_F8FAF6 c_w_r #(for.first ? 'en-top' : '')">
+                <a href="#(article.url??)">
+                    <p>#(article.title ??)</p>
+                    <div class="en-jt">
+                        <span>></span>
+                    </div>
+                </a>
+            </div>
+            #end
+            #end
+        </div>
+    </div>
+</div>
+#end

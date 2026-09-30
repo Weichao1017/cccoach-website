@@ -1,0 +1,57 @@
+#include("./layout.html")
+#@layout()
+
+#define css()
+<link type="text/css" rel="stylesheet" href="#(CPATH)#(TPATH)/css/teaching.css?_1645215125652" />
+<link rel="stylesheet" type="text/css" href="#(CPATH)#(TPATH)/css/homePage.css?_1645215125652">
+<style>
+    .main-container {
+        height: calc(100% - 6.25rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-title {
+        font-weight: bold;
+        font-size: 2.1875rem /* 35/16 */;
+        text-align: center;
+        padding-top: 5.9375rem /* 95/16 */;
+        color: #007855;
+        border-bottom: .125rem /* 2/16 */ solid #D9DFD6;
+        padding-bottom: 1rem;
+    }
+    .artlist-list {
+        width:85rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 2rem;
+    }
+</style>
+#end
+
+
+#define content()
+<div class="fixd-h main-container bg_EAF1E7">
+        <div class="content-title">
+            创问·#(category.title ??)
+        </div>
+        <div class="artlist-list">
+            #categoryArticles(categoryId = category.id,count = 1000, orderBy = "order_number asc,id asc")
+            #for(article : articles)
+            	<div class="bg_fff home-six-toux" onclick="location.href='#(article.url??)'">
+            		<div class="">
+            			<div class="home-img-wtd">
+            				<img class="home-img-yp" src="#(article.thumbnail ??)" alt="" srcset="">
+            			</div>
+            		</div>
+            		<div class="home-six-mz color_48">
+            			#(article.title ??)
+            		</div>
+            	</div>
+            #end
+            #end
+        </div>
+</div>
+#end

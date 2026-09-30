@@ -1,0 +1,68 @@
+#include("./layout.html")
+#@layout()
+
+#define css()
+<link href="highlight/styles/railscasts.css" rel="stylesheet">
+<link href="#(CPATH)/static/components/ckeditor5/ck-content.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="#(CPATH)#(TPATH)/css/tutor.css?_1645215125652" />
+<style>
+    .article-thumbimg {
+        background-position: center;
+        background-size: cover;
+    }
+</style>
+#end
+#define script()
+<script src="#(CPATH)/static/components/jquery/jquery.form.min.js"></script>
+<script src="highlight/highlight.pack.js"></script>
+<script>
+
+    hljs.initHighlightingOnLoad();
+
+</script>
+#end
+
+
+#define content()
+<div class="fixd-h">
+    <div class="ce-block-container" style="background-color:#12757c;">
+        <div class="c-block-box fx-a-c-j-spb">
+            <div class="main-content" style="min-height:12rem;justify-content: center;">
+                <div class="title">
+                    #articleCategories(article.id,"category")
+                    #if(categories.size()>0)
+                    <span>创问·#(categories.get(0).title??)</span>
+                    #else
+                    <span>创问·
+                    #articleCategories(article.id,"tag")
+                    #if(categories.size() > 0) #(categories.get(categories.size()-1).title ??) #end
+                    #end
+                    </span>
+                    #end
+                    #end
+                </div>
+            </div>
+            <div class="main-logo">
+                <div class="custom-box">
+                    <div class="logo">
+                        <img class="image_resized" src="#(article.showImage ??)" alt="ewm.png">
+                    </div>
+                    <p class="name">#(article.title ??)</p>
+                    #articleCategories(article.id,"tag")
+                        #for(tag : categories)
+                            <p class="c-content-tag"><span>#(tag.title ??)</span></p>
+                        #end
+                    #end
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ce-block-container" style="box-shadow: none;">
+        <div class="c-block-box">
+            <div class="c-block-half" style="padding-top: 4rem;">
+                #(article.content ??)
+            </div>
+        </div>
+    </div>
+</div>
+#end

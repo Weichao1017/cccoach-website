@@ -1,0 +1,47 @@
+<!--name: 核心教练-->
+<!--icon: bi bi-people-->
+
+<div class="home-pad">
+    <div class="fx-a-c-j-c home-ence color_0F4B3C">
+        #blockOption('标题','创问·核心教练')
+    </div>
+    <div class="fx-a-c-j-c">
+        <div class="team-en-x"></div>
+    </div>
+    <div class="fx-a-c-j-c home-five color_48">
+        #unescape(blockOption('描述:textarea',''))
+    </div>
+    <div class="home-six fx-a-c-j-spb fx-fw">
+        #articles(style="tutor", orderBy="order_number asc", count = 12, withRecommend="true")
+        #for(article : articles)
+        <div class="bg_fff home-six-toux" onclick="location.href='#(article.url ??)'">
+            <div class="">
+                <div class="home-img-wtd">
+                    <img class="home-img-yp" src="#(article.thumbnail ??)" alt="" srcset="">
+                </div>
+            </div>
+            <div class="home-six-mz color_48">
+                #(article.title ??)
+            </div>
+            <div class="bg_007855 home-six-bgm fx-a-c">
+                #articleCategories(article.id,"tag")
+                #for(tag : categories)
+                #if(for.last ??)
+                #(tag.title ??)
+                #else
+                #(tag.title ??)
+                &nbsp;|&nbsp;
+                #end
+                #end
+                #end
+            </div>
+        </div>
+        #end
+        #end
+    </div>
+    <div class="fx-a-c-j-c">
+        <div onclick="location.href='#blockOption('了解更多','#')'" class="home-ljgd bg_007855 fx-a-c cur-pnr">
+            了&nbsp;解&nbsp;更&nbsp;多
+        </div>
+    </div>
+</div>

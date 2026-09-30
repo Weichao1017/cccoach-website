@@ -1,0 +1,115 @@
+#@layout()
+
+#define content()
+
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row mb-2">
+                    <div class="col-sm-12">
+                        <h1>
+                            模板设置
+                            <small data-toggle="tooltip" title="" data-placement="right" data-trigger="hover" data-original-title=""><i class="nav-icon far fa-question-circle"></i></small>
+                            <small> 首页 / 模板 / 设置</small>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="content">
+
+        <div class="container-fluid">
+                <div class="card card-outline card-primary">
+
+
+                    <form class=" form-setting" autocomplete="off"
+                          id="optionForm">
+                        <div class="card-body">
+
+                            <h4 class="form-header">logo设置</h4>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Logo文字</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" placeholder="Logo文字的内容..."
+                                           name="jpressportal_logo_text" value="#option('jpressportal_logo_text')">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Logo图片</label>
+                                <div class="col-sm-6">
+                                    <div class="jpress-image-browser">
+                                        <input type="hidden" name="bonhumeur_web_avatar"
+                                               value="#option('bonhumeur_web_avatar')"/>
+                                        <img src="#(CPATH)#option('bonhumeur_web_avatar','/static/commons/img/avatar.png')">
+                                        <a class="image-reset"> <i class="fa fa-edit"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h4 class="form-header">网站底部信息</h4>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">百度快捷搜索词</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" placeholder="百度快捷搜索词..."
+                                           name="cccoach_web_bottom_searchkeys" value="#option('cccoach_web_bottom_searchkeys')">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">Logo</label>
+                                <div class="col-sm-6">
+                                    <div class="jpress-image-browser">
+                                        <input type="hidden" name="cccoach_web_bottom_logo"
+                                               value="#option('cccoach_web_bottom_logo')"/>
+                                        <img src="#(CPATH)#option('cccoach_web_bottom_logo','/static/commons/img/avatar.png')">
+                                        <a class="image-reset"> <i class="fa fa-edit"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">微信公众号</label>
+                                <div class="col-sm-6">
+                                    <div class="jpress-image-browser">
+                                        <input type="hidden" name="cccoach_web_bottom_wxpublic_qrcode"
+                                               value="#option('cccoach_web_bottom_wxpublic_qrcode')"/>
+                                        <img src="#(CPATH)#option('cccoach_web_bottom_wxpublic_qrcode','/static/commons/img/avatar.png')">
+                                        <a class="image-reset"> <i class="fa fa-edit"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label class="col-sm-2 col-form-label">微信视频号</label>
+                                <div class="col-sm-6">
+                                    <div class="jpress-image-browser">
+                                        <input type="hidden" name="cccoach_web_bottom_wxvideo_qrcode"
+                                               value="#option('cccoach_web_bottom_wxvideo_qrcode')"/>
+                                        <img src="#(CPATH)#option('cccoach_web_bottom_wxvideo_qrcode','/static/commons/img/avatar.png')">
+                                        <a class="image-reset"> <i class="fa fa-edit"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="card-footer">
+                            <div class="offset-sm-2 col-sm-10 submit-block">
+                                <div class="card-submit">
+                                    <button type="submit" class="btn btn-primary">提交</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+#end

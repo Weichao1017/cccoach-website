@@ -1,0 +1,28 @@
+#include("./layout.html")
+#@layout()
+#define css()
+<link rel="stylesheet" type="text/css" href="#(CPATH)#(TPATH)/css/homePage.css?_1645215125652">
+<link rel="stylesheet" type="text/css" href="#(CPATH)#(TPATH)/css/carousel.css?_1645215125652">
+#end
+#define content()
+<div class="fixd-h">
+    #blockContainer('首页顶部')
+    #end
+</div>
+#end
+
+#define script()
+<script src="#(CPATH)#(TPATH)/js/treeNodeCanvas.js"></script>
+<script src="#(CPATH)#(TPATH)/js/treePracticeCanvas.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".tree-canvas").each(function() {
+            let certCanvas = new TreeCertCanvas({container: this,cpath:'#(CPATH)#(TPATH)'});
+            certCanvas.doAnimateCanvasTimer();
+        });
+        $(".tree-practice-canvas").each(function() {
+            new TreePracticeCanvas({container: this,cpath:'#(CPATH)#(TPATH)'});
+        });
+    });
+</script>
+#end

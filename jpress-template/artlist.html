@@ -1,0 +1,53 @@
+#include("./layout.html")
+#@layout()
+
+#define css()
+<link type="text/css" rel="stylesheet" href="#(CPATH)#(TPATH)/css/teaching.css?_1645215125652" />
+<link rel="stylesheet" type="text/css" href="#(CPATH)#(TPATH)/css/homePage.css?_1645215125652">
+#end
+
+
+#define content()
+<div class="fixd-h">
+	<div class="c-r-s bg_EAF1E7">
+		#categories(parentId = 4,asTree = false)
+		#for(category : categories)
+		<div class="te-box" style="padding:20px 0;">
+			<div class="c-jl color_0F4B3C title">
+				创问·#(category.title ??)
+			</div>
+			<div class="c-hg b_b-D6"></div>
+			<div class="home-six fx-a-c-j-spb fx-fw">
+				#categoryArticles(categoryId = category.id,count = 1000, orderBy = "order_number asc,id asc")
+				#for(article : articles)
+				<div class="bg_fff home-six-toux" onclick="location.href='#(article.url??)'">
+					<div class="">
+						<div class="home-img-wtd">
+							<img class="home-img-yp" src="#(article.thumbnail ??)" alt="" srcset="">
+						</div>
+					</div>
+					<div class="home-six-mz color_48">
+						#(article.title ??)
+					</div>
+					<div class="bg_007855 home-six-bgm fx-a-c">
+						#articleCategories(article.id,"tag")
+							#for(tag : categories)
+								#if(for.last ??)
+									#(tag.title ??)
+								#else
+									#(tag.title ??)
+									&nbsp;|&nbsp;
+								#end
+							#end
+						#end
+					</div>
+				</div>
+				#end
+				#end
+			</div>
+		</div>
+		#end
+		#end
+	</div>
+</div>
+#end

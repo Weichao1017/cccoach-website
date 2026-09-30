@@ -1,0 +1,98 @@
+#include("./layout.html")
+#@layout()
+
+#define css()
+<link href="highlight/styles/railscasts.css" rel="stylesheet">
+<link href="#(CPATH)/static/components/ckeditor5/ck-content.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="#(CPATH)#(TPATH)/css/ecology.css?_1645215125652" />
+<style>
+    .article-thumbimg {
+        background-position: center;
+        background-size: cover;
+    }
+</style>
+#end
+#define script()
+<script src="#(CPATH)/static/components/jquery/jquery.form.min.js"></script>
+<script src="highlight/highlight.pack.js"></script>
+<script>
+
+    hljs.initHighlightingOnLoad();
+
+</script>
+#end
+
+
+#define content()
+<div class="fixd-h">
+    <div class="c-r-s c_w_r xth-yy">
+        #articleCategories(article.id,"category")
+        #if(categories.size()>0)
+        <div class="c-jl">创问·#(categories.get(0).title??)</div>
+        #end
+        #end
+        #if(article.summary??)
+        <div class="ec-lx">#(article.summary??)</div>
+        #end
+        <div class="ec-p-abt">
+            <div class="ec-bor fx-a-c-j-c">
+                <div class="ec-bor fx-a-c-j-c article-thumbimg" style="background-image: url('#(article.showImage ??)')"></div>
+            </div>
+            <div class="ec-ig-p fx-a-c-j-c">
+                #option("web_template")
+                倪福银
+            </div>
+            <div class="ec-t-p fx-a-c-j-c">
+                加入社群
+            </div>
+            <div class="ec-t-p fx-a-c-j-c">
+                137 0167 1117
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="c-r-s c_w_r xth-yy">
+        <div class="c-jl">
+            #articleCategories(article.id,"category")
+            #if(categories.size()>0)
+            <span>创问·#(categories.get(0).title??)</span>
+            #else
+            <span>创问·
+                #articleCategories(article.id,"tag")
+                #if(categories.size() > 0) #(categories.get(categories.size()-1).title ??) #end
+                #end
+            </span>
+            #end
+            #end
+        </div>
+        <div class="ec-p-abt">
+            <div class="fx-a-c-j-c">
+                <div class="ec-bor fx-a-c-j-c article-thumbimg" style="background-image: url('#(article.showImage ??)')"></div>
+            </div>
+            <div class="ec-ig-p fx-a-c-j-c">
+                #(article.title ??)
+            </div>
+            <div class="fx-a-c-j-c">
+                <div class="ec-t-p fx-a-c-j-c">
+                    #articleCategories(article.id,"tag")
+                    #for(tag : categories)
+                    #if(for.last ??)
+                    #(tag.title ??)
+                    #else
+                    #(tag.title ??)
+                    &nbsp;|&nbsp;
+                    #end
+                    #end
+                    #end
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ec-ltp">
+        #(article.content ??)
+    </div>
+</div>
+#end

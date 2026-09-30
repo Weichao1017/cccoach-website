@@ -1,0 +1,90 @@
+#include("./layout.html")
+#@layout()
+
+#define css()
+<link href="highlight/styles/railscasts.css" rel="stylesheet">
+<link href="#(CPATH)/static/components/ckeditor5/ck-content.css" rel="stylesheet">
+#end
+#define script()
+<script src="#(CPATH)/static/components/jquery/jquery.form.min.js"></script>
+<script src="highlight/highlight.pack.js"></script>
+<script>
+
+    hljs.initHighlightingOnLoad();
+
+</script>
+#end
+
+
+#define content()
+<div class="container bl-container">
+    <div class="row">
+        <div class="col-md-9 col-sm-12">
+            <h3 class="bl-article-title">
+                #(article.title ??)
+            </h3>
+
+            <div class="bl-article-label">
+                <div class="article-label-item">
+                    <img src="#(article.user.avatar ??)" class="img-fluid rounded-circle bl-img-size" alt="">
+                    <span class="text-surmary">#(article.user.nickname ??)</span>
+                </div>
+
+                <div class="article-label-item">#date(article.created)</div>
+            </div>
+            <div class="bl-article ck-content">
+                #(article.content ??)
+            </div>
+
+            #relevantArticles(article)
+            <div class="recommend-panel">
+                <h4 class="bl-title">相关文章</h4>
+                <div class="card-deck">
+                    #for(article :relevantArticles )
+                    <div class="card card-outlinebl-panel">
+                        <a class="recommend-panel-link" href="#(article.url ??)">
+                            <div class="recommend-panel-top">
+                                <img src="#(article.showImage ?? 'img/blog-image.jpg')" class="img-fluid"
+                                     alt="#(article.title ??)">
+                            </div>
+                            <div class="recommend-panel-bottom">
+                                #(article.title ??)
+                            </div>
+                        </a>
+                    </div>
+                    #end
+                </div>
+            </div>
+            #end
+
+            #@defaultArticleCommentPage()
+
+        </div>
+
+
+
+        <div class="col-md-3 col-sm-12">
+            <div class="card-right">
+                <h4 class="bl-title">热门文章</h4>
+
+                #articles()
+                #for(article : articles)
+                <div class="card-right-body">
+                    <a href="#(article.url ??)">
+                        <div>
+                            <img src="#(article.showImage ?? 'img/default-img.jpg')"
+                                 class="img-fluid"
+                                 alt="#(article.title ??)">
+
+                        </div>
+                        <p>#(article.title ??)</p>
+                    </a>
+                </div>
+                #end
+                #end
+
+            </div>
+        </div>
+    </div>
+</div>
+#end

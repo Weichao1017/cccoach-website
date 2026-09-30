@@ -1,0 +1,47 @@
+#include("./layout.html")
+#@layout()
+
+#define css()
+<link href="#(CPATH)/static/components/ckeditor5/ck-content.css" rel="stylesheet">
+<style>
+	.news-box {
+		box-shadow: none;
+		animation: box-shadow 0.5s;
+		animation-iteration-count: 1;
+	}
+	.news-box:hover {
+		box-shadow: 0px 0px 10px 1px #575757;
+	}
+</style>
+#end
+
+
+#define content()
+    <div class="fixd-h" style="background-color:#EAF1E7;height:100%;padding-top:2rem;width:100%;">
+    <div style="padding-bottom:3.125rem;">
+        <div style="color:#198264;margin-bottom:4rem;text-align:center;">
+            <span class="title" style="border-bottom:.125rem solid #00000033;font-size:2.1875rem;padding-bottom:1rem;"><strong>创问·实时资讯</strong></span>
+        </div>
+        #(page.content ??)
+        <div style="margin:4.375rem auto 6.25rem;">
+            <div class="c-block-container" style="display:flex;justify-content:space-around;margin:5rem auto 0;width:80rem;">
+				#pageList(pageSize = 1000,orderBy="id desc",categoryId = 2)
+
+				#for(page : singlePages.list)
+				<div class="news-box" style="background-color:#fff;border-radius:0.25rem;margin:0.25rem 0;padding:0.25rem;width:14rem;">
+				    <p style="max-height:14rem;overflow:hidden;width:100%;">
+				        <a href="#(page.url ??)"><img class="image_resized publishing-image" style="width:100%;" src="#(page.thumbnail??)" alt="s1.png">&nbsp;</a>
+				    </p>
+				    <p style="color:#234A3C;font-size:1rem;font-weight:500;line-height:2rem;overflow:hidden;text-overflow:ellipsis;text-wrap-mode:nowrap;">
+				        #(page.title ??)
+				    </p>
+				</div>
+				#end
+
+				#end
+            </div>
+        </div>
+    </div>
+</div>
+#end
+

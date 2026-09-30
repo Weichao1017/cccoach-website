@@ -1,0 +1,12 @@
+#include("./layout.html")
+#@layout()
+
+#define css()
+<link href="#(CPATH)#(TPATH)/css/page_theory.css" rel="stylesheet">
+#end
+
+#define content()
+<div class="fixd-h">
+    #(page.content ??)
+</div>
+#end

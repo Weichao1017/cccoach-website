@@ -1,0 +1,71 @@
+#include("./layout.html")
+#@layout()
+
+#define css()
+<link href="#(CPATH)/static/components/ckeditor5/ck-content.css" rel="stylesheet">
+<style>
+    .box-header .tag .flag {
+        margin-left: 1rem;
+    }
+    @media (max-width: 576px) {
+        .c-block-container .visual-img{
+            height: 21.5rem !important;
+            width: 21.5rem !important;
+        }
+        .c-block-container .visual-img-main{
+            height: 51.8rem !important;
+            width: 33.8rem !important;
+        }
+        .c-block-container .visual-img-third{
+            height: 25.5rem !important;
+            width: 26.5rem !important;
+        }
+        .c-block-container .visual-img-text{
+            font-size: 2rem !important;
+            height: 25.5rem !important;
+            width: 26.5rem !important;
+        }
+        .content {
+            margin-top: 15.5rem!important;
+        }
+        .content .title {
+            font-size: 4rem!important;
+        }
+        .content-container {
+            justify-content: center !important;
+            flex-direction: column !important;
+            width: 100% !important;
+        }
+        .content-container > .box {
+            width: 80rem!important;
+            margin-bottom: 3rem !important;
+        }
+        .content-container .box .box-header {
+            padding: 1rem!important;
+
+        }
+        .content-container .box .box-header .logo {
+            height: 5rem!important;
+            margin-left: 0 !important;
+            width: 7rem!important;
+        }
+        .box-header .tag .tips {
+            font-size: 2rem!important;
+        }
+        .box-header .tag .flag {
+            height: 2rem!important;
+            width: 2rem!important;
+        }
+        .video-box{
+            height: 49rem!important;
+            width: 78rem!important;
+        }
+    }
+</style>
+#end
+
+#define content()
+<div class="fixd-h">
+    #(page.content ??)
+</div>
+#end

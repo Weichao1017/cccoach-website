@@ -1,0 +1,13 @@
+#include("./layout.html")
+#@layout()
+
+#define css()
+<link href="#(CPATH)/static/components/ckeditor5/ck-content.css" rel="stylesheet">
+<link href="#(CPATH)#(TPATH)/css/page_ecology.css" rel="stylesheet">
+#end
+
+#define content()
+<div class="fixd-h">
+    #(page.content ??)
+</div>
+#end

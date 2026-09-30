@@ -1,0 +1,79 @@
+<!--name: 创问统计-->
+<!--icon: bi bi-bar-chart-line-->
+
+<div class="bl-pages_container bl-card padding-0" style="background-color: #blockOption('背景色','#007855');">
+    <p class="bl-block_title bl-card-title" style="color: #blockOption('标题文字顏色','#75BCA7');">
+        <span><strong>#blockOption('标题')</strong></span>
+    </p>
+    <div class="bl-pages_box fx-a-c-j-spad card-deck">
+        <div class="card">
+            <div class="fx-a-c-j-c card-body">
+                #if(blockOption('图片链接1'))
+                <a href="#blockOption('图片链接1')" target="#blockOption('打开方式:target')">
+                    <img class="home-img" src="#(CPATH)#(TPATH)/img/block/count/twoOne.png" style="max-width: 100%;">
+                </a>
+                #else
+
+                <img class="home-img" src="#(CPATH)#(TPATH)/img/block/count/twoOne.png" style="max-width: 100%;">
+                #end
+            </div>
+            <div class="home-sz fx-a-c-j-c card-body">
+                #blockOption('数字1','2000')<span>+</span>
+            </div>
+            <div class="home-but-z fx-a-c-j-c card-body">
+                #unescape(blockOption('描述1:textarea'))
+            </div>
+        </div>
+        <div class="card">
+            <div class="fx-a-c-j-c card-body">
+                #if(blockOption('图片链接2'))
+                <a href="#blockOption('图片链接2')" target="#blockOption('打开方式:target')">
+                    <img class="home-img" src="#(CPATH)#(TPATH)/img/block/count/twoTo.png" style="max-width: 100%;">
+                </a>
+                #else
+                <img class="home-img" src="#(CPATH)#(TPATH)/img/block/count/twoTo.png" style="max-width: 100%;">
+                #end
+            </div>
+            <div class="home-sz fx-a-c-j-c card-body">
+                #blockOption('数字2','1500')<span>+</span>
+            </div>
+            <div class="home-but-z fx-a-c-j-c card-body">
+                #unescape(blockOption('描述2:textarea'))
+            </div>
+        </div>
+        <div class="card">
+            <div class="fx-a-c-j-c card-body">
+                #if(blockOption('图片链接3'))
+                <a href="#blockOption('图片链接3')" target="#blockOption('打开方式:target')">
+                    <img class="home-img" src="#(CPATH)#(TPATH)/img/block/count/twoTree.png" style="max-width: 100%;">
+                </a>
+                #else
+                <img class="home-img" src="#(CPATH)#(TPATH)/img/block/count/twoTree.png" style="max-width: 100%;">
+                #end
+            </div>
+            <div class="home-sz fx-a-c-j-c card-body">
+                #blockOption('数字3','200')<span>+</span>
+            </div>
+            <div class="home-but-z fx-a-c-j-c card-body">
+                #unescape(blockOption('描述3:textarea'))
+            </div>
+        </div>
+        <div class="card">
+            <div class="fx-a-c-j-c card-body">
+                #if(blockOption('图片链接4'))
+                <a href="#blockOption('图片链接4')" target="#blockOption('打开方式:target')">
+                    <img class="home-img" src="#(CPATH)#(TPATH)/img/block/count/twoFrou.png" style="max-width: 100%;">
+                </a>
+                #else
+                <img class="home-img" src="#(CPATH)#(TPATH)/img/block/count/twoFrou.png" style="max-width: 100%;">
+                #end
+            </div>
+            <div class="home-sz fx-a-c-j-c card-body">
+                #blockOption('数字4','200000')<span>+</span>
+            </div>
+            <div class="home-but-z fx-a-c-j-c card-body">
+                #unescape(blockOption('描述4:textarea'))
+            </div>
+        </div>
+    </div>
+</div>

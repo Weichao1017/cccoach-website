@@ -1,0 +1,23 @@
+<!--name: 幻灯片-->
+<!--type:layout -->
+<!--icon: bi bi-file-slides-->
+
+<div class="bl-block_container" style="background-color: #blockOption('背景色','#75BCA7')">
+    #if(blockOption('标题'))
+    <p class="bl-block_title" style="color: #blockOption('标题文字顏色','#198264');">
+        <span><strong>#blockOption('标题')</strong></span>
+    </p>
+    #end
+    <div class="bl-carousel_container #blockOption('容器Class','bl-carousel_banner')">
+        <ul class="bl-carousel">
+            #for(i = 0; i < blockOption('页数','1'); i++)
+            <li class="bsItemContainer #blockOption('容器Class','bl-carousel_banner')">#(children?.get(i))</li>
+            #end
+        </ul>
+        <div class="bl-carousel_tag">
+            <div class="bl-carousel_prev"><i class="bi bi-chevron-left"></i></div>
+            <ul class="bl-carousel_index"></ul>
+            <div class="bl-carousel_next"><i class="bi bi-chevron-right"></i></div>
+        </div>
+    </div>
+</div>

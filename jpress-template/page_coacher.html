@@ -1,0 +1,12 @@
+#include("./layout.html")
+#@layout()
+
+#define css()
+<link href="#(CPATH)/static/components/ckeditor5/ck-content.css" rel="stylesheet">
+#end
+
+
+#define content()
+    #(page.content ??)
+#end
+
