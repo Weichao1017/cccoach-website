@@ -15,7 +15,7 @@ SRV=$V/extension/www.cccoach.cn/legacy-redirect.conf
 NG=/www/server/nginx/sbin/nginx
 L=/www/wwwroot/cccoach-legacy
 TS=$(date +%Y%m%d-%H%M%S)
-BK=/root/cccoach_switch_backup/$TS
+BK=/root/cccoach_switch_backup/$TS-$$
 
 cd "$REPO"
 git fetch -q --tags origin 2>/dev/null || echo "（没连上 GitHub，用服务器上已有的版本）"
@@ -59,6 +59,7 @@ fi
 # 5) nginx 自检，通过才生效；不通过全部恢复
 if $NG -t >/dev/null 2>&1; then
   $NG -s reload
+  sleep 1   # 等新配置接手，再报告
   echo "已生效：$REF"
   echo "切换前的线上文件备份在：$BK"
 else
