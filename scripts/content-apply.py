@@ -60,6 +60,25 @@ def main():
     bdir = '/root/cccoach_content_backup/%s-%s%s' % (ts, M['id'], '-revert' if revert else '')
     plan, conflicts, sql, backups, covers = [], [], ['START TRANSACTION;'], {}, []
 
+    # 0) 新建分类（按别名，已存在就跳过；回退时只删没有文章挂着的）
+    for o in [o for o in M['ops'] if o['type'] == 'category']:
+        ex = q("SELECT JSON_OBJECT('id', id) FROM article_category WHERE slug=%s" % sqlstr(o['slug']))
+        if revert:
+            if ex:
+                # 这个分类是本清单建的：先解除文章挂靠，再删分类
+                sql.append("DELETE FROM article_category_mapping WHERE category_id=%d;" % int(ex[0]['id']))
+                sql.append("DELETE FROM article_category WHERE id=%d;" % int(ex[0]['id']))
+                plan.append('删除分类  %s' % o['title'])
+            continue
+        if ex:
+            plan.append('跳过（分类已存在）  %s' % o['title'])
+            continue
+        sql.append("INSERT INTO article_category (pid, slug, title, style, type, count, order_number, with_recommend, with_top, "
+                   "site_id, created, modified) SELECT id, %s, %s, 'category', 'category', 0, %d, 0, 0, 0, NOW(), NOW() "
+                   "FROM article_category WHERE slug=%s;" % (hexs(o['slug']), hexs(o['title']), int(o.get('order_number', 0)),
+                                                            sqlstr(o['parent'])))
+        plan.append('新建分类  %s（上级：%s）' % (o['title'], o['parent']))
+
     # 1) 首页区块（同一模板的字段一起改）
     blocks = [o for o in M['ops'] if o['type'] == 'block_option']
     if blocks:
@@ -82,7 +101,7 @@ def main():
             sql.append("UPDATE template_block_option SET options=%s WHERE template_id=%s;" % (
                 hexs(json.dumps(data, ensure_ascii=False, separators=(',', ':'))), sqlstr(tid)))
 
-    # 2) 文字替换（同一行的替换合并成一次更新）
+    # 2) 文字替换（同一行的替换合并成一次更新；表可以是 article、single_page、menu 等）
     groups = {}
     for o in [o for o in M['ops'] if o['type'] == 'replace']:
         groups.setdefault((o['table'], json.dumps(o['key'], sort_keys=True), o['field']), []).append(o)
@@ -163,7 +182,7 @@ def main():
                 plan.append('下线（改为草稿）  文章：%s' % meta['title'])
             continue
         cover_src = os.path.join(d, meta['cover'])
-        thumb = '/attachment/%s/%s' % (meta['cover_dir'], os.path.basename(meta['cover']))
+        thumb = '/attachment/%s/%s%s' % (meta['cover_dir'], slug, os.path.splitext(meta['cover'])[1] or '.jpg')
         covers.append((cover_src, ATTACH + thumb[len('/attachment'):]))
         fields = dict(title=meta['title'], content=body, summary=meta['summary'], meta_title=meta['meta_title'],
                       meta_description=meta['meta_description'], meta_keywords=','.join(meta['keywords']),
@@ -179,15 +198,21 @@ def main():
         else:
             cols = list(fields) + ['edit_mode', 'user_id', 'order_number', 'status', 'comment_status', 'comment_count',
                                    'view_count', 'with_allow_search', 'site_id', 'created', 'modified']
-            vals = [hexs(fields[k]) for k in fields] + ["'html'", '1', '0', "'normal'", '1', '0', '0', '1', '0', 'NOW()', 'NOW()']
+            vals = [hexs(fields[k]) for k in fields] + ["'html'", '1', str(int(meta.get('order_number', 0))), "'normal'", '1', '0', '0',
+                                                       '1', '0', 'NOW()', 'NOW()']
             sql.append('INSERT INTO article (%s) VALUES (%s);' % (', '.join(cols), ', '.join(vals)))
             plan.append('新建  文章：%s（/article/%s）' % (meta['title'], slug))
         for c in meta['categories']:
-            sql.append('INSERT IGNORE INTO article_category_mapping (article_id, category_id) SELECT id, %d FROM article WHERE slug=%s;'
-                       % (int(c), sqlstr(slug)))
-    for c in sorted(cats):
-        sql.append("UPDATE article_category SET count=(SELECT COUNT(*) FROM article_category_mapping m JOIN article a "
-                   "ON a.id=m.article_id AND a.status='normal' WHERE m.category_id=%d) WHERE id=%d;" % (int(c), int(c)))
+            if isinstance(c, int) or str(c).isdigit():
+                sql.append('INSERT IGNORE INTO article_category_mapping (article_id, category_id) SELECT id, %d FROM article WHERE slug=%s;'
+                           % (int(c), sqlstr(slug)))
+            else:
+                sql.append('INSERT IGNORE INTO article_category_mapping (article_id, category_id) SELECT a.id, c.id FROM article a '
+                           'JOIN article_category c ON c.slug=%s WHERE a.slug=%s;' % (hexs(c), sqlstr(slug)))
+    for c in sorted(cats, key=str):
+        cond = 'id=%d' % int(c) if isinstance(c, int) or str(c).isdigit() else 'slug=%s' % hexs(c)
+        sql.append("UPDATE article_category c SET count=(SELECT COUNT(*) FROM article_category_mapping m JOIN article a "
+                   "ON a.id=m.article_id AND a.status='normal' WHERE m.category_id=c.id) WHERE c.%s;" % cond)
     sql.append('COMMIT;')
 
     print('\n'.join(plan) or '（没有要做的）')

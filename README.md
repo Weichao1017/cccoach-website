@@ -33,6 +33,9 @@
    - 页面里替换一段文字：`{"page": "/profile", "find": "原文", "replace": "新文", "note": "说明"}`
    - 整个字段换成新值：`{"page": "/article/13", "field": "meta_description", "set": "新值"}`，或内容取自文件：`"set_file": "edits/tutors/13.html"`
    - 改导师页标签：`{"article": 18, "tags_remove": ["ICF PCC"], "tags_add": ["ICF MCC"]}`
+   - 改其他表（如导航菜单说明）：`{"table": "menu", "key": {"id": 2}, "field": "extra", "find": "原文", "replace": "新文"}`
+   新建文章分类写在 `content/categories.json`（`[{"slug", "title", "parent", "order_number"}]`）；文章 meta.json 的 categories 可以写分类 id，也可以写别名（如 "supervisor"、"ICF PCC"）。
+   文章正文用 Markdown 写在 article.md，再用 `python3 scripts/md2html.py content/articles/<别名>` 生成 article.html（本机运行，需要 markdown、beautifulsoup4）。
 2. 生成变更清单：`python3 scripts/content-build.py content/changes/<日期-名字>.json`（对照数据库当前内容，写出精确的“原内容 → 新内容”；已经是新内容的自动跳过。只想看某几类改动时加 `--from edits,certs` 之类）。
 3. 提交并推送到 GitHub。
 4. 执行：`python3 scripts/content-apply.py content/changes/<清单>.json`（先核对，全部对上才在一个事务里写库，写前自动备份到 /root/cccoach_content_backup/，写完重启新站刷新缓存）。先加 `--dry-run` 看计划。

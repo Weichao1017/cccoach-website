@@ -10,6 +10,8 @@
       {"page": "/article/13", "field": "meta_description", "set": "新值", "note": ""}  整个字段改成新值
       {"page": "/article/13", "field": "content", "set_file": "edits/tutors/13.html"}  字段内容取自文件
       {"article": 13, "tags_remove": ["ICF PCC"], "tags_add": ["ICF MCC"], "note": ""} 改导师页标签
+      {"table": "menu", "key": {"id": 2}, "field": "extra", "find": "原文", "replace": "新文"}  改其他表（如导航菜单说明）
+  categories.json        要新建的文章分类：[{slug, title, parent（上级分类别名）, order_number}]
 用法：content-build.py content/changes/<清单名>.json [--from homepage,certs,articles,edits]
       不写 --from 就四类都看。
 """
@@ -58,6 +60,14 @@ def field_of(table, col, val, field):
 
 ops, missing = [], []
 kinds = set(sys.argv[sys.argv.index('--from') + 1].split(',')) if '--from' in sys.argv else {'homepage', 'certs', 'articles', 'edits'}
+
+# 0) 新建分类（content/categories.json：[{slug, title, parent, order_number}]）
+cpath = os.path.join(C, 'categories.json')
+if 'articles' in kinds and os.path.exists(cpath):
+    for c in json.load(open(cpath, encoding='utf-8')):
+        if not q("SELECT JSON_OBJECT('id', id) FROM article_category WHERE slug=%s" % sqlstr(c['slug'])):
+            ops.append(dict(type='category', slug=c['slug'], title=c['title'], parent=c['parent'],
+                            order_number=c.get('order_number', 0), note='新建分类'))
 
 # 1) 首页区块
 if 'homepage' in kinds:
@@ -133,10 +143,11 @@ if 'articles' in kinds:
         meta = json.load(open(os.path.join(d, 'meta.json'), encoding='utf-8'))
         body = open(os.path.join(d, 'article.html'), encoding='utf-8').read()
         cur = q("SELECT JSON_OBJECT('title',title,'content',content,'summary',summary,'meta_title',meta_title,"
-                "'meta_description',meta_description,'meta_keywords',meta_keywords,'status',status) FROM article WHERE slug=%s"
-                % sqlstr(meta['slug']))
+                "'meta_description',meta_description,'meta_keywords',meta_keywords,'status',status,'thumbnail',thumbnail) "
+                "FROM article WHERE slug=%s" % sqlstr(meta['slug']))
         want = dict(title=meta['title'], content=body, summary=meta['summary'], meta_title=meta['meta_title'],
-                    meta_description=meta['meta_description'], meta_keywords=','.join(meta['keywords']), status='normal')
+                    meta_description=meta['meta_description'], meta_keywords=','.join(meta['keywords']), status='normal',
+                    thumbnail='/attachment/%s/%s%s' % (meta['cover_dir'], meta['slug'], os.path.splitext(meta['cover'])[1] or '.jpg'))
         if cur and all((cur[0].get(k) or '') == v for k, v in want.items()):
             continue
         ops.append(dict(type='article', dir='content/articles/' + slug))
@@ -158,11 +169,15 @@ if 'edits' in kinds and os.path.isdir(os.path.join(C, 'edits')):
                     continue
                 ops.append(dict(type='mapping', article_id=aid, remove=rm, add=add, note=note))
                 continue
-            table, col, val = page_key(e['page'])
+            if 'table' in e:
+                table = e['table']
+                (col, val), = e['key'].items()
+            else:
+                table, col, val = page_key(e['page'])
             field = e.get('field', 'content')
             cur = field_of(table, col, val, field)
             if cur is None and not q("SELECT JSON_OBJECT('n', COUNT(*)) FROM %s WHERE %s=%s" % (table, col, sqlstr(val)))[0]['n']:
-                missing.append('%s：找不到这一页' % e['page'])
+                missing.append('%s：找不到这一页' % e.get('page', '%s %s' % (table, val)))
                 continue
             cur = cur or ''
             if 'find' in e:
@@ -170,7 +185,7 @@ if 'edits' in kinds and os.path.isdir(os.path.join(C, 'edits')):
                 if n_old == 0 and n_new > 0:
                     continue
                 if n_old == 0:
-                    missing.append('%s：找不到要替换的文字“%s”' % (e['page'], e['find'][:40]))
+                    missing.append('%s：找不到要替换的文字“%s”' % (e.get('page', '%s %s' % (table, val)), e['find'][:40]))
                     continue
                 ops.append(dict(type='replace', table=table, key={col: val}, field=field,
                                 old=e['find'], new=e['replace'], count=n_old, note=note))
@@ -183,7 +198,7 @@ out = sys.argv[1]
 json.dump(dict(id=os.path.splitext(os.path.basename(out))[0], ops=ops), open(out, 'w', encoding='utf-8'),
           ensure_ascii=False, indent=1)
 cnt = lambda t: sum(o['type'] == t for o in ops)  # noqa: E731
-print('清单：%s，共 %d 项（区块 %d、文字替换 %d、整段改写 %d、标签 %d、文章 %d）' % (
-    out, len(ops), cnt('block_option'), cnt('replace'), cnt('set'), cnt('mapping'), cnt('article')))
+print('清单：%s，共 %d 项（分类 %d、区块 %d、文字替换 %d、整段改写 %d、标签 %d、文章 %d）' % (
+    out, len(ops), cnt('category'), cnt('block_option'), cnt('replace'), cnt('set'), cnt('mapping'), cnt('article')))
 for m in missing:
     print('  未处理：' + m)

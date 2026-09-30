@@ -84,6 +84,25 @@ CHECKS = [
 
  # v11 站点地图时间
  ('/sitemap.xml', '站点地图修改时间标 +08:00、不含已跳转的 /37', lambda h: 'Z</lastmod>' not in h and '+08:00</lastmod>' in h and 'cccoach.cn/37<' not in h),
+
+ # v12（2026-09-30）：问答第二版、ACC→PCC→MCC 路径、ICF 考官、进化教练 Level 2、品牌数字统一、公益教练
+ ('/article/icf-coaching-career-block', '问答一：写明从 ACC、PCC 到 MCC 的完整路径，不再句句写“来源”', lambda h: '从 ACC、PCC 到 MCC' in text_of(h) and '（来源：' not in text_of(h)),
+ ('/article/new-coach-first-100-hours', '问答二：纯净ACC直通车、完整认证路径', lambda h: '纯净ACC直通车' in text_of(h) and '从 ACC、PCC 到 MCC' in text_of(h)),
+ ('/article/icf-cce-credits-renewal', '问答三：ICF 认证主考官、ICF 考官，没有“请顾问出示”', lambda h: 'ICF 认证主考官' in text_of(h) and 'ICF 考官' in text_of(h) and '请顾问出示' not in text_of(h)),
+ ('/article/category/news', '三篇问答各有自己的封面', lambda h: all('/attachment/20260930/%s.jpg' % s in h for s in ['icf-coaching-career-block', 'new-coach-first-100-hours', 'icf-cce-credits-renewal'])),
+ ('/brand-courses-team-pcc', '课程页写 ICF 考官，不再写创问考官', lambda h: 'ICF考官' in text_of(h) and '创问考官' not in text_of(h) and '创问认证考官' not in text_of(h)),
+ ('/brand-courses-coach-supervisor', '督导班页写 ICF 考官（卡片和横幅替代文字）', lambda h: 'ICF考官' in text_of(h) and '创问考官' not in h),
+ ('/brand-courses-team-acc', 'ACC 页：进化教练是 Level2，替代文字写 ICF 考官', lambda h: '创问进化教练为Level2' in text_of(h) and '进化教练Level1' not in text_of(h) and '创问考官' not in h),
+ ('/', '首页：刘东卡片写 ICF考官、导航写明 ACC→PCC→MCC、描述写明完整认证路径', lambda h: 'ICF考官|高管教练' in text_of(h) and '从ACC、PCC到MCC的完整认证路径' in text_of(h) and '从 ACC、PCC 到 MCC 的完整认证路径' in (re.findall(r'name="description" content="([^"]*)"', h) or [''])[0]),
+ ('/social_social', '社会责任页品牌数字统一', lambda h: all(x in text_of(h) for x in ['4000+名进化与纯净教练', '30万+人', 'MCC 19人']) and '20余万' not in text_of(h) and '130+名' not in text_of(h)),
+ ('/brand-courses-team4c', '隋于军小时数 6000+', lambda h: '6000小时+' in text_of(h) and '5600小时+' not in text_of(h)),
+ ('/article/14', '隋于军导师页小时数 6000+', lambda h: '6000小时+' in text_of(h) and '5000小时+' not in text_of(h)),
+ ('/article/15', '何朝霞导师页品牌数字', lambda h: '4000+名' in text_of(h) and '13座城市' in text_of(h) and '3000多位' not in text_of(h)),
+ ('/article/category/teaching', '师资团队有“公益教练”一组和 25 位公益教练的真链接', lambda h: '创问·公益教练' in text_of(h) and len(set(re.findall(r'href="(/article/coach-[a-z-]+)"', h))) >= 28),
+ ('/article/coach-yanqin-xie', '新公益教练页：简介、ICF PCC、人物结构化数据、字节时间标签', lambda h: '简介' in text_of(h) and 'ICF PCC' in text_of(h) and any(d.get('@type') == 'Person' and d.get('description') for d in lds(h)) and 'bytedance:published_time' in h),
+ ('/article/coach-lucia', '新公益督导页', lambda h: '简介' in text_of(h) and 'ICF PCC' in text_of(h)),
+ ('/llms.txt', 'llms.txt：认证路径和进化教练 Level 2', lambda h: '进化教练是 Level 2' in h and '纯净ACC直通车' in h),
+ ('/sitemap.xml', '站点地图含新教练页', lambda h: h.count('/article/coach-') >= 28),
 ]
 pages = sorted({p for p, _, _ in CHECKS})
 res = {}

@@ -1,0 +1,104 @@
+[
+ {
+  "page": "/brand-courses-team-pcc",
+  "find": "bg_A7\">\n        创问考官\n       <",
+  "replace": "bg_A7\">\n        ICF考官\n       <",
+  "note": "贺拥军、刘东卡片：创问考官 → ICF考官（客户 2026-09-30 指正）"
+ },
+ {
+  "page": "/brand-courses-team-pcc",
+  "find": "创问认证考官｜督导",
+  "replace": "ICF认证考官｜督导",
+  "note": "刘东卡片：创问认证考官 → ICF认证考官"
+ },
+ {
+  "page": "/brand-courses-team-pcc",
+  "find": "创问首席督导教练｜考官",
+  "replace": "创问首席督导教练｜ICF考官",
+  "note": "贺拥军卡片：考官 → ICF考官"
+ },
+ {
+  "page": "/brand-courses-coach-supervisor",
+  "find": "<strong>创问考官</strong>",
+  "replace": "<strong>ICF考官</strong>",
+  "note": "刘东、贺拥军卡片：创问考官 → ICF考官"
+ },
+ {
+  "page": "/brand-courses-coach-supervisor",
+  "find": "创问认证考官|督导",
+  "replace": "ICF认证考官|督导",
+  "note": "刘东卡片：创问认证考官 → ICF认证考官"
+ },
+ {
+  "page": "/brand-courses-coach-supervisor",
+  "find": "创问首席督导教练|考官",
+  "replace": "创问首席督导教练|ICF考官",
+  "note": "贺拥军卡片：考官 → ICF考官"
+ },
+ {
+  "page": "/brand-courses-significant",
+  "find": "创问首席督导教练｜考官",
+  "replace": "创问首席督导教练｜ICF考官",
+  "note": "贺拥军卡片：考官 → ICF考官"
+ },
+ {
+  "page": "/ecology_digital",
+  "find": "创问认证考官、督导",
+  "replace": "ICF认证考官、督导",
+  "note": "刘东卡片：创问认证考官 → ICF认证考官"
+ },
+ {
+  "page": "/article/68",
+  "find": "创问认证考官",
+  "replace": "ICF认证考官",
+  "note": "文中“创问认证考官”→“ICF认证考官”"
+ },
+ {
+  "page": "/brand-courses-team4c",
+  "find": "（5600小时+）",
+  "replace": "（6000小时+）",
+  "note": "隋于军小时数统一为 6000+（客户 2026-09-30 确认）"
+ },
+ {
+  "page": "/social_social",
+  "find": "<p>创问自成立10年以来</p>",
+  "replace": "<p>创问自2013年成立以来</p>",
+  "note": "品牌数字统一"
+ },
+ {
+  "page": "/social_social",
+  "find": "<p>打通了从教练小白到大师级教练的培养路径累计培养了</p>",
+  "replace": "<p>打通了从教练小白到大师级教练、从ACC、PCC到MCC的完整认证路径，累计培养了</p>",
+  "note": "写明 ACC→PCC→MCC 认证路径"
+ },
+ {
+  "page": "/social_social",
+  "find": "<p>2000+名进化教练</p>\n    <p>1500+名纯净教练</p>",
+  "replace": "<p>4000+名进化与纯净教练</p>",
+  "note": "品牌数字统一：进化与纯净教练 4000+"
+ },
+ {
+  "page": "/social_social",
+  "find": "<p>130+名ICF专业级教练（PCC）</p>",
+  "replace": "<p>学员中获得ICF认证的有ACC 150+人、PCC 180+人、MCC 19人</p>",
+  "note": "品牌数字统一：学员中 ICF 认证人数"
+ },
+ {
+  "page": "/social_social",
+  "find": "<p>20余万人参与到创问主办的教练相关学习中</p>",
+  "replace": "<p>30万+人参与到创问主办的教练相关学习中</p>",
+  "note": "品牌数字统一：30万+"
+ },
+ {
+  "page": "/social_social",
+  "find": "<p>创问深耕10年运用教练为",
+  "replace": "<p>创问深耕13年，运用教练为",
+  "note": "品牌数字统一：13年"
+ },
+ {
+  "page": "/brand-courses-team-acc",
+  "find": "创问进化教练Level1,包含125小时的教练培训,远远超过ICF规定的最低标准!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>创问纯净教练Level1,包含66小时的教练培训,同样超过ICF标准!",
+  "replace": "创问纯净教练Level1,包含66小时的教练培训,超过ICF规定的最低标准!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>创问进化教练为Level2（PCC级别）课程,包含125小时的教练培训,学完可继续进化PCC直通车,直通PCC认证!",
+  "note": "进化教练是 Level 2（PCC 级别）课程，没有 Level 1（客户 2026-09-30 确认）；纯净教练是 Level 1"
+ }
+]
