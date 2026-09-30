@@ -81,6 +81,9 @@ CHECKS = [
  ('/article/18', '尤志欣导师页：ICF MCC', lambda h: 'ICF认证大师级MCC教练' in text_of(h) and 'ICF PCC' not in text_of(h)),
  ('/article/30', '王艺萍导师页：ICF MCC', lambda h: 'ICF MCC' in text_of(h)),
  ('/article/21', '谢忠民导师页：华为等高管履历、1000+ 小时', lambda h: all(x in text_of(h) for x in ['华为', '1998', '1000+'])),
+
+ # v11 站点地图时间
+ ('/sitemap.xml', '站点地图修改时间标 +08:00、不含已跳转的 /37', lambda h: 'Z</lastmod>' not in h and '+08:00</lastmod>' in h and 'cccoach.cn/37<' not in h),
 ]
 pages = sorted({p for p, _, _ in CHECKS})
 res = {}

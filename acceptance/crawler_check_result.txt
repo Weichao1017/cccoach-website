@@ -1,21 +1,28 @@
 == 各爬虫能否打开（状态码 / 字节数）
 / GPTBot:200/76385 OAI-SearchBot:200/76385 ClaudeBot:200/76385 PerplexityBot:200/76385 Bytespider:200/76385 Baiduspider:200/76385 Googlebot:200/76385
-/article/12 GPTBot:200/58323 OAI-SearchBot:200/58323 ClaudeBot:200/58323 PerplexityBot:200/58323 Bytespider:200/58323 Baiduspider:200/58323 Googlebot:200/58323
-/article/62 GPTBot:200/78554 OAI-SearchBot:200/78554 ClaudeBot:200/78554 PerplexityBot:200/78554 Bytespider:200/78554 Baiduspider:200/78554 Googlebot:200/78554
-/article/63 GPTBot:200/69422 OAI-SearchBot:200/69422 ClaudeBot:200/69422 PerplexityBot:200/69422 Bytespider:200/69422 Baiduspider:200/69422 Googlebot:200/69422
-/article/70 GPTBot:200/90748 OAI-SearchBot:200/90748 ClaudeBot:200/90748 PerplexityBot:200/90748 Bytespider:200/90748 Baiduspider:200/90748 Googlebot:200/90748
+/article/12 GPTBot:200/58878 OAI-SearchBot:200/58878 ClaudeBot:200/58878 PerplexityBot:200/58878 Bytespider:200/58878 Baiduspider:200/58878 Googlebot:200/58878
+/article/13 GPTBot:200/59199 OAI-SearchBot:200/59199 ClaudeBot:200/59199 PerplexityBot:200/59199 Bytespider:200/59199 Baiduspider:200/59199 Googlebot:200/59199
+/article/18 GPTBot:200/59126 OAI-SearchBot:200/59126 ClaudeBot:200/59126 PerplexityBot:200/59126 Bytespider:200/59126 Baiduspider:200/59126 Googlebot:200/59126
+/article/21 GPTBot:200/59116 OAI-SearchBot:200/59116 ClaudeBot:200/59116 PerplexityBot:200/59116 Bytespider:200/59116 Baiduspider:200/59116 Googlebot:200/59116
+/article/30 GPTBot:200/59072 OAI-SearchBot:200/59072 ClaudeBot:200/59072 PerplexityBot:200/59072 Bytespider:200/59072 Baiduspider:200/59072 Googlebot:200/59072
+/article/62 GPTBot:200/78718 OAI-SearchBot:200/78718 ClaudeBot:200/78718 PerplexityBot:200/78718 Bytespider:200/78718 Baiduspider:200/78718 Googlebot:200/78718
+/article/63 GPTBot:200/69586 OAI-SearchBot:200/69586 ClaudeBot:200/69586 PerplexityBot:200/69586 Bytespider:200/69586 Baiduspider:200/69586 Googlebot:200/69586
+/article/70 GPTBot:200/90912 OAI-SearchBot:200/90912 ClaudeBot:200/90912 PerplexityBot:200/90912 Bytespider:200/90912 Baiduspider:200/90912 Googlebot:200/90912
 /article/category/encyclopedia GPTBot:200/58317 OAI-SearchBot:200/58317 ClaudeBot:200/58317 PerplexityBot:200/58317 Bytespider:200/58317 Baiduspider:200/58317 Googlebot:200/58317
 /article/category/news GPTBot:200/67316 OAI-SearchBot:200/67316 ClaudeBot:200/67316 PerplexityBot:200/67316 Bytespider:200/67316 Baiduspider:200/67316 Googlebot:200/67316
 /article/category/teaching GPTBot:200/83266 OAI-SearchBot:200/83266 ClaudeBot:200/83266 PerplexityBot:200/83266 Bytespider:200/83266 Baiduspider:200/83266 Googlebot:200/83266
-/article/icf-cce-credits-renewal GPTBot:200/71501 OAI-SearchBot:200/71501 ClaudeBot:200/71501 PerplexityBot:200/71501 Bytespider:200/71501 Baiduspider:200/71501 Googlebot:200/71501
-/article/icf-coaching-career-block GPTBot:200/68537 OAI-SearchBot:200/68537 ClaudeBot:200/68537 PerplexityBot:200/68537 Bytespider:200/68537 Baiduspider:200/68537 Googlebot:200/68537
-/article/new-coach-first-100-hours GPTBot:200/64380 OAI-SearchBot:200/64380 ClaudeBot:200/64380 PerplexityBot:200/64380 Bytespider:200/64380 Baiduspider:200/64380 Googlebot:200/64380
-/brand-courses-significant GPTBot:200/77613 OAI-SearchBot:200/77613 ClaudeBot:200/77613 PerplexityBot:200/77613 Bytespider:200/77613 Baiduspider:200/77613 Googlebot:200/77613
-/brand-courses-team-acc GPTBot:200/76808 OAI-SearchBot:200/76808 ClaudeBot:200/76808 PerplexityBot:200/76808 Bytespider:200/76808 Baiduspider:200/76808 Googlebot:200/76808
+/article/icf-cce-credits-renewal GPTBot:200/71665 OAI-SearchBot:200/71665 ClaudeBot:200/71665 PerplexityBot:200/71665 Bytespider:200/71665 Baiduspider:200/71665 Googlebot:200/71665
+/article/icf-coaching-career-block GPTBot:200/68701 OAI-SearchBot:200/68701 ClaudeBot:200/68701 PerplexityBot:200/68701 Bytespider:200/68701 Baiduspider:200/68701 Googlebot:200/68701
+/article/new-coach-first-100-hours GPTBot:200/64544 OAI-SearchBot:200/64544 ClaudeBot:200/64544 PerplexityBot:200/64544 Bytespider:200/64544 Baiduspider:200/64544 Googlebot:200/64544
+/brand-courses-coach-social-theater GPTBot:200/70025 OAI-SearchBot:200/70025 ClaudeBot:200/70025 PerplexityBot:200/70025 Bytespider:200/70025 Baiduspider:200/70025 Googlebot:200/70025
+/brand-courses-dialogue GPTBot:200/83286 OAI-SearchBot:200/83286 ClaudeBot:200/83286 PerplexityBot:200/83286 Bytespider:200/83286 Baiduspider:200/83286 Googlebot:200/83286
+/brand-courses-pure-pcc GPTBot:200/73802 OAI-SearchBot:200/73802 ClaudeBot:200/73802 PerplexityBot:200/73802 Bytespider:200/73802 Baiduspider:200/73802 Googlebot:200/73802
+/brand-courses-significant GPTBot:200/77694 OAI-SearchBot:200/77694 ClaudeBot:200/77694 PerplexityBot:200/77694 Bytespider:200/77694 Baiduspider:200/77694 Googlebot:200/77694
+/brand-courses-team-acc GPTBot:200/76889 OAI-SearchBot:200/76889 ClaudeBot:200/76889 PerplexityBot:200/76889 Bytespider:200/76889 Baiduspider:200/76889 Googlebot:200/76889
 /llms.txt GPTBot:200/3078 OAI-SearchBot:200/3078 ClaudeBot:200/3078 PerplexityBot:200/3078 Bytespider:200/3078 Baiduspider:200/3078 Googlebot:200/3078
-/profile GPTBot:200/67009 OAI-SearchBot:200/67009 ClaudeBot:200/67009 PerplexityBot:200/67009 Bytespider:200/67009 Baiduspider:200/67009 Googlebot:200/67009
+/profile GPTBot:200/67110 OAI-SearchBot:200/67110 ClaudeBot:200/67110 PerplexityBot:200/67110 Bytespider:200/67110 Baiduspider:200/67110 Googlebot:200/67110
 /robots.txt GPTBot:200/157 OAI-SearchBot:200/157 ClaudeBot:200/157 PerplexityBot:200/157 Bytespider:200/157 Baiduspider:200/157 Googlebot:200/157
-/sitemap.xml GPTBot:200/22166 OAI-SearchBot:200/22166 ClaudeBot:200/22166 PerplexityBot:200/22166 Bytespider:200/22166 Baiduspider:200/22166 Googlebot:200/22166
+/sitemap.xml GPTBot:200/22730 OAI-SearchBot:200/22730 ClaudeBot:200/22730 PerplexityBot:200/22730 Bytespider:200/22730 Baiduspider:200/22730 Googlebot:200/22730
 
 == 内容检查（每项对 7 个爬虫都要通过）
 通过  /article/icf-coaching-career-block 一级标题
@@ -54,5 +61,19 @@
 通过  /robots.txt                        robots 不拦任何 AI 爬虫、站点地图写完整网址
 通过  /llms.txt                          llms.txt 含三篇新文章
 通过  /sitemap.xml                       站点地图含三篇新文章、全是 https
+通过  /profile                           获奖文字按证书原件（最具传播力奖、最佳组织奖）
+通过  /article/13                        刘东导师页：页面描述是简介（含飞利浦）
+通过  /article/13                        导师人物结构化数据含简介
+通过  /article/13                        字节时间标签（发布、更新）
+通过  /brand-courses-dialogue            单页字节更新时间标签
+通过  /profile                           改过的单页更新时间是今天
+通过  /article/icf-coaching-career-block 文章字节时间标签
+通过  /brand-courses-dialogue            尤志欣卡片为 MCC
+通过  /brand-courses-pure-pcc            何朝霞、徐莉俐卡片为 PCC
+通过  /brand-courses-coach-social-theater 徐莉俐卡片为 PCC
+通过  /article/18                        尤志欣导师页：ICF MCC
+通过  /article/30                        王艺萍导师页：ICF MCC
+通过  /article/21                        谢忠民导师页：华为等高管履历、1000+ 小时
+通过  /sitemap.xml                       站点地图修改时间标 +08:00、不含已跳转的 /37
 
-共 36 项，失败 0 项
+共 50 项，失败 0 项
