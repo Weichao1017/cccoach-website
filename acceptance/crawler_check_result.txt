@@ -103,7 +103,7 @@
 通过  /article/14                        隋于军导师页：ICF MCC、2026 年 10 月获得
 通过  /brand-courses-dialogue            与教练对话页隋于军卡片 MCC
 通过  /brand-courses-significant         纯净教练页隋于军卡片 MCC
-失败  /brand-courses-pure-pcc            纯净PCC页隋于军 ICF 认证 MCC 大师级教练  ← GPTBot,OAI-SearchBot,ClaudeBot,PerplexityBot,Bytespider(豆包),Baiduspider,Googlebot
-失败  /brand-courses-team4c              4C 页隋于军 MCC 大师级教练  ← GPTBot,OAI-SearchBot,ClaudeBot,PerplexityBot,Bytespider(豆包),Baiduspider,Googlebot
+通过  /brand-courses-pure-pcc            纯净PCC页隋于军 ICF 认证 MCC 大师级教练
+通过  /brand-courses-team4c              4C 页隋于军 MCC 大师级教练
 
-共 72 项，失败 2 项
+共 72 项，失败 0 项
