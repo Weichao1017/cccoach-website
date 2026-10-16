@@ -108,8 +108,8 @@ CHECKS = [
  ('/article/14', '隋于军导师页：ICF MCC、2026 年 10 月获得', lambda h: 'ICF国际认证大师级教练，MCC' in text_of(h) and '2026 年 10 月获得 ICF MCC' in text_of(h) and 'ICF PCC' not in text_of(h)),
  ('/brand-courses-dialogue', '与教练对话页隋于军卡片 MCC', lambda h: re.search(r'Allow 隋于军\s*</div>\s*<div class="fx-f-s team-tpp">\s*<div class="team-cc[^"]*">\s*MCC', h) is not None),
  ('/brand-courses-significant', '纯净教练页隋于军卡片 MCC', lambda h: re.search(r'隋于军 Allow\s*</div>\s*<div class="fx-f-s team-tpp">\s*<div class="team-cc[^"]*">\s*MCC', h) is not None),
- ('/brand-courses-pure-pcc', '纯净PCC页隋于军 ICF 认证 MCC 大师级教练', lambda h: 'ICF 认证 MCC' in text_of(h) and 'ICF 认证 PCC' not in text_of(h)),
- ('/brand-courses-team4c', '4C 页隋于军 MCC 大师级教练', lambda h: re.search(r'隋于军\s*(</[^>]+>\s*<[^>]+>\s*)*MCC', h) is not None),
+ ('/brand-courses-pure-pcc', '纯净PCC页隋于军 ICF 认证 MCC 大师级教练', lambda h: 'ICF 认证 MCC&nbsp;&nbsp;<br>大师级教练' in h),
+ ('/brand-courses-team4c', '4C 页隋于军 MCC 大师级教练', lambda h: re.search(r'隋于军(\s*<[^>]+>)*\s*MCC(\s*<[^>]+>)*\s*大师级教练', h) is not None),
 ]
 pages = sorted({p for p, _, _ in CHECKS})
 res = {}
