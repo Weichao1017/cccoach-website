@@ -1,0 +1,50 @@
+[
+ {
+  "page": "/brand-courses-dialogue",
+  "find": "Allow 隋于军\n      </div>\n      <div class=\"fx-f-s team-tpp\">\n       <div class=\"team-cc fx-a-c-j-c bg_A7\">\n        PCC",
+  "replace": "Allow 隋于军\n      </div>\n      <div class=\"fx-f-s team-tpp\">\n       <div class=\"team-cc fx-a-c-j-c bg_A7\">\n        MCC",
+  "note": "隋于军 llow 隋于军 PCC → llow 隋于军 MCC（2026-10-16 获 ICF MCC，客户告知）"
+ },
+ {
+  "page": "/brand-courses-significant",
+  "find": "隋于军 Allow\n      </div>\n      <div class=\"fx-f-s team-tpp\">\n       <div class=\"team-cc fx-a-c-j-c bg_A7\">\n        PCC",
+  "replace": "隋于军 Allow\n      </div>\n      <div class=\"fx-f-s team-tpp\">\n       <div class=\"team-cc fx-a-c-j-c bg_A7\">\n        MCC",
+  "note": "隋于军 于军 Allow PCC → 于军 Allow MCC（2026-10-16 获 ICF MCC，客户告知）"
+ },
+ {
+  "page": "/brand-courses-team4c",
+  "find": "Allow</p>\n    <p>隋于军</p>\n   </div>\n   <div class=\"fx-f-s team-tpp\">\n    <div class=\"team-cc fx-a-c-j-c bg_A7\">\n     PCC\n    </div>\n    <div class=\"team-zyjl fx-a-c-j-c bg_A7\">\n     专业教练",
+  "replace": "Allow</p>\n    <p>隋于军</p>\n   </div>\n   <div class=\"fx-f-s team-tpp\">\n    <div class=\"team-cc fx-a-c-j-c bg_A7\">\n     MCC\n    </div>\n    <div class=\"team-zyjl fx-a-c-j-c bg_A7\">\n     大师级教练",
+  "note": "隋于军 隋于军 PCC 专业教练 → 于军 MCC 大师级教练（2026-10-16 获 ICF MCC，客户告知）"
+ },
+ {
+  "page": "/brand-courses-team-pcc",
+  "find": "隋于军\"></a>\n     </div>\n     <div class=\"dio-left-r\">\n      <div class=\"team-brief\">\n       Allow 隋于军\n      </div>\n      <div class=\"fx-f-s team-tpp\">\n       <div class=\"team-cc fx-a-c-j-c bg_A7\">\n        PCC",
+  "replace": "隋于军\"></a>\n     </div>\n     <div class=\"dio-left-r\">\n      <div class=\"team-brief\">\n       Allow 隋于军\n      </div>\n      <div class=\"fx-f-s team-tpp\">\n       <div class=\"team-cc fx-a-c-j-c bg_A7\">\n        MCC",
+  "note": "隋于军 llow 隋于军 PCC → llow 隋于军 MCC（2026-10-16 获 ICF MCC，客户告知）"
+ },
+ {
+  "page": "/ecology_practise",
+  "find": "隋于军 Allow</p>\n    <p class=\"c-content-tag\"><span>创始人</span></p>\n    <p class=\"c-content-tag\"><span>ICF PCC",
+  "replace": "隋于军 Allow</p>\n    <p class=\"c-content-tag\"><span>创始人</span></p>\n    <p class=\"c-content-tag\"><span>ICF MCC",
+  "note": "隋于军  创始人 ICF PCC →  创始人 ICF MCC（2026-10-16 获 ICF MCC，客户告知）"
+ },
+ {
+  "page": "/ecology_association",
+  "find": "隋于军 Allow</p>\n    <p class=\"c-content-tag\"><span>ICF PCC",
+  "replace": "隋于军 Allow</p>\n    <p class=\"c-content-tag\"><span>ICF MCC",
+  "note": "隋于军 llow ICF PCC → llow ICF MCC（2026-10-16 获 ICF MCC，客户告知）"
+ },
+ {
+  "page": "/brand-courses-pure-pcc",
+  "find": "隋于军 Alow</p>\n    <div style=\"color:#198264;display:flex;font-size:.75rem;line-height:1.25rem;margin:0.5rem 0;\">\n     <div class=\"team-cc\" style=\"background-color:#75BCA7;border-radius:6.25rem;padding:0 0.25rem;\">\n      <strong>创始人&nbsp;|&nbsp;首席导师</strong>\n     </div>\n     <div class=\"team-cc\" style=\"background-color:#75BCA7;border-radius:6.25rem;margin-left:0.5rem;padding:0 0.25rem;\">\n      <strong>课程导师</strong>\n     </div>\n    </div>\n    <p class=\"dio-four-p\" style=\"color:#fff;font-size:.75rem;font-weight:400;\">创问教练中心创始人，首席教练&nbsp;&nbsp;<br>《纯净教练》开创者&nbsp;&nbsp;<br>《4C团队教练》开创者&nbsp;&nbsp;<br>杉树公益教练型导师”创始教练&nbsp;&nbsp;<br>ICF 认证 PCC&nbsp;&nbsp;<br>专业教练",
+  "replace": "隋于军 Alow</p>\n    <div style=\"color:#198264;display:flex;font-size:.75rem;line-height:1.25rem;margin:0.5rem 0;\">\n     <div class=\"team-cc\" style=\"background-color:#75BCA7;border-radius:6.25rem;padding:0 0.25rem;\">\n      <strong>创始人&nbsp;|&nbsp;首席导师</strong>\n     </div>\n     <div class=\"team-cc\" style=\"background-color:#75BCA7;border-radius:6.25rem;margin-left:0.5rem;padding:0 0.25rem;\">\n      <strong>课程导师</strong>\n     </div>\n    </div>\n    <p class=\"dio-four-p\" style=\"color:#fff;font-size:.75rem;font-weight:400;\">创问教练中心创始人，首席教练&nbsp;&nbsp;<br>《纯净教练》开创者&nbsp;&nbsp;<br>《4C团队教练》开创者&nbsp;&nbsp;<br>杉树公益教练型导师”创始教练&nbsp;&nbsp;<br>ICF 认证 MCC&nbsp;&nbsp;<br>大师级教练",
+  "note": "隋于军 练 ICF 认证 PCC → 练 ICF 认证 MCC（2026-10-16 获 ICF MCC，客户告知）"
+ },
+ {
+  "page": "/social-community-zeng-university",
+  "find": "隋于军 Allow</p>\n    <p class=\"c-content-tag\"><span>ICF PCC",
+  "replace": "隋于军 Allow</p>\n    <p class=\"c-content-tag\"><span>ICF MCC",
+  "note": "隋于军 llow ICF PCC → llow ICF MCC（2026-10-16 获 ICF MCC，客户告知）"
+ }
+]

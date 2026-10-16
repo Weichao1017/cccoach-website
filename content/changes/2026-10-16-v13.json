@@ -1,0 +1,134 @@
+{
+ "id": "2026-10-16-v13",
+ "ops": [
+  {
+   "type": "set",
+   "table": "article",
+   "key": {
+    "id": 14
+   },
+   "field": "content",
+   "old": "<p class=\"c-title-tag\"><span>简介</span></p>\n<div class=\"c-content\">\n <p>隋于军（Allow），创问中国教练中心创始人、首席教练，ICF PCC，《纯净教练》流派开创者、《4C团队教练》创始人。有大型国企、奢侈品行业企业管理经验及创业经历。教练时数 6000+ 小时，督导时数 1000+ 小时。</p>\n</div>\n<p class=\"c-title-tag\"><span>职业背景</span></p>\n<div class=\"c-content\">\n <p>大型国企、奢侈品行业企业管理经验及创业经历</p>\n <p>创问中国教练中心创始人、首席教练 《4C团队教练》创始人、实践者</p>\n <p>U型理论中国核心实践者&nbsp;</p>\n <p>《纯净教练》流派开创者，《与教练对话》发起者。</p>\n</div>\n<p class=\"c-title-tag\"><span>教练背景</span></p>\n<div class=\"c-content\">\n <p>ICF国际认证专业级教练，PCC，创问教练体系认证高管教练&nbsp;</p>\n <p>在教练、U型领导力等方面有极高的造诣，帮助团队从自我的限制信念中释放出来，团队的工作绩效得到持续提升。&nbsp;</p>\n <p>大量的团队和高管教练经验（6000小时+）使其具备极其敏锐的觉察力，强大的Hold场能力，尤其擅长于高管级别的对话。</p>\n <p>教练客户：美克美家（高管）、百度（销售研发团队）、辉瑞（销售高管）、苏黎世保险（亚太区高管）、博世（核心管理层团队）、龙湖（销售大区总监）、赛莱默（中国区高管团队）等。。</p>\n <p>杉树公益“教练型老师”创始教练。</p>\n <p>教练小时数 6000+，督导小时数 1000+。</p>\n</div>",
+   "new": "<p class=\"c-title-tag\"><span>简介</span></p>\n<div class=\"c-content\">\n <p>隋于军（Allow），创问中国教练中心创始人、首席教练，ICF MCC，《纯净教练》流派开创者、《4C团队教练》创始人。有大型国企、奢侈品行业企业管理经验及创业经历。教练时数 6000+ 小时，督导时数 1000+ 小时。</p>\n</div>\n<p class=\"c-title-tag\"><span>职业背景</span></p>\n<div class=\"c-content\">\n <p>大型国企、奢侈品行业企业管理经验及创业经历</p>\n <p>创问中国教练中心创始人、首席教练 《4C团队教练》创始人、实践者</p>\n <p>U型理论中国核心实践者&nbsp;</p>\n <p>《纯净教练》流派开创者，《与教练对话》发起者。</p>\n</div>\n<p class=\"c-title-tag\"><span>教练背景</span></p>\n<div class=\"c-content\">\n <p>ICF国际认证大师级教练，MCC，创问教练体系认证高管教练&nbsp;</p>\n <p>在教练、U型领导力等方面有极高的造诣，帮助团队从自我的限制信念中释放出来，团队的工作绩效得到持续提升。&nbsp;</p>\n <p>大量的团队和高管教练经验（6000小时+）使其具备极其敏锐的觉察力，强大的Hold场能力，尤其擅长于高管级别的对话。</p>\n <p>教练客户：美克美家（高管）、百度（销售研发团队）、辉瑞（销售高管）、苏黎世保险（亚太区高管）、博世（核心管理层团队）、龙湖（销售大区总监）、赛莱默（中国区高管团队）等。。</p>\n <p>杉树公益“教练型老师”创始教练。</p>\n <p>教练小时数 6000+，督导小时数 1000+。</p>\n <p>2026 年 10 月获得 ICF MCC 大师级教练认证。</p>\n</div>",
+   "note": "导师页补全背景（简介、高管履历、教练资历）"
+  },
+  {
+   "type": "set",
+   "table": "article",
+   "key": {
+    "id": 14
+   },
+   "field": "meta_description",
+   "old": "隋于军（Allow），创问中国教练中心创始人、首席教练，ICF PCC，《纯净教练》流派开创者、《4C团队教练》创始人。有大型国企、奢侈品行业企业管理经验及创业经历。教练时数 6000+ 小时，督导时数 1000+ 小时。",
+   "new": "隋于军（Allow），创问中国教练中心创始人、首席教练，ICF MCC，《纯净教练》流派开创者、《4C团队教练》创始人。有大型国企、奢侈品行业企业管理经验及创业经历。教练时数 6000+ 小时，督导时数 1000+ 小时。",
+   "note": "导师页描述＝简介"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "brand-courses-dialogue"
+   },
+   "field": "content",
+   "old": "Allow 隋于军\n      </div>\n      <div class=\"fx-f-s team-tpp\">\n       <div class=\"team-cc fx-a-c-j-c bg_A7\">\n        PCC",
+   "new": "Allow 隋于军\n      </div>\n      <div class=\"fx-f-s team-tpp\">\n       <div class=\"team-cc fx-a-c-j-c bg_A7\">\n        MCC",
+   "count": 1,
+   "note": "隋于军 llow 隋于军 PCC → llow 隋于军 MCC（2026-10-16 获 ICF MCC，客户告知）"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "brand-courses-significant"
+   },
+   "field": "content",
+   "old": "隋于军 Allow\n      </div>\n      <div class=\"fx-f-s team-tpp\">\n       <div class=\"team-cc fx-a-c-j-c bg_A7\">\n        PCC",
+   "new": "隋于军 Allow\n      </div>\n      <div class=\"fx-f-s team-tpp\">\n       <div class=\"team-cc fx-a-c-j-c bg_A7\">\n        MCC",
+   "count": 1,
+   "note": "隋于军 于军 Allow PCC → 于军 Allow MCC（2026-10-16 获 ICF MCC，客户告知）"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "brand-courses-team4c"
+   },
+   "field": "content",
+   "old": "Allow</p>\n    <p>隋于军</p>\n   </div>\n   <div class=\"fx-f-s team-tpp\">\n    <div class=\"team-cc fx-a-c-j-c bg_A7\">\n     PCC\n    </div>\n    <div class=\"team-zyjl fx-a-c-j-c bg_A7\">\n     专业教练",
+   "new": "Allow</p>\n    <p>隋于军</p>\n   </div>\n   <div class=\"fx-f-s team-tpp\">\n    <div class=\"team-cc fx-a-c-j-c bg_A7\">\n     MCC\n    </div>\n    <div class=\"team-zyjl fx-a-c-j-c bg_A7\">\n     大师级教练",
+   "count": 1,
+   "note": "隋于军 隋于军 PCC 专业教练 → 于军 MCC 大师级教练（2026-10-16 获 ICF MCC，客户告知）"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "brand-courses-team-pcc"
+   },
+   "field": "content",
+   "old": "隋于军\"></a>\n     </div>\n     <div class=\"dio-left-r\">\n      <div class=\"team-brief\">\n       Allow 隋于军\n      </div>\n      <div class=\"fx-f-s team-tpp\">\n       <div class=\"team-cc fx-a-c-j-c bg_A7\">\n        PCC",
+   "new": "隋于军\"></a>\n     </div>\n     <div class=\"dio-left-r\">\n      <div class=\"team-brief\">\n       Allow 隋于军\n      </div>\n      <div class=\"fx-f-s team-tpp\">\n       <div class=\"team-cc fx-a-c-j-c bg_A7\">\n        MCC",
+   "count": 1,
+   "note": "隋于军 llow 隋于军 PCC → llow 隋于军 MCC（2026-10-16 获 ICF MCC，客户告知）"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "ecology_practise"
+   },
+   "field": "content",
+   "old": "隋于军 Allow</p>\n    <p class=\"c-content-tag\"><span>创始人</span></p>\n    <p class=\"c-content-tag\"><span>ICF PCC",
+   "new": "隋于军 Allow</p>\n    <p class=\"c-content-tag\"><span>创始人</span></p>\n    <p class=\"c-content-tag\"><span>ICF MCC",
+   "count": 1,
+   "note": "隋于军  创始人 ICF PCC →  创始人 ICF MCC（2026-10-16 获 ICF MCC，客户告知）"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "ecology_association"
+   },
+   "field": "content",
+   "old": "隋于军 Allow</p>\n    <p class=\"c-content-tag\"><span>ICF PCC",
+   "new": "隋于军 Allow</p>\n    <p class=\"c-content-tag\"><span>ICF MCC",
+   "count": 1,
+   "note": "隋于军 llow ICF PCC → llow ICF MCC（2026-10-16 获 ICF MCC，客户告知）"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "brand-courses-pure-pcc"
+   },
+   "field": "content",
+   "old": "隋于军 Alow</p>\n    <div style=\"color:#198264;display:flex;font-size:.75rem;line-height:1.25rem;margin:0.5rem 0;\">\n     <div class=\"team-cc\" style=\"background-color:#75BCA7;border-radius:6.25rem;padding:0 0.25rem;\">\n      <strong>创始人&nbsp;|&nbsp;首席导师</strong>\n     </div>\n     <div class=\"team-cc\" style=\"background-color:#75BCA7;border-radius:6.25rem;margin-left:0.5rem;padding:0 0.25rem;\">\n      <strong>课程导师</strong>\n     </div>\n    </div>\n    <p class=\"dio-four-p\" style=\"color:#fff;font-size:.75rem;font-weight:400;\">创问教练中心创始人，首席教练&nbsp;&nbsp;<br>《纯净教练》开创者&nbsp;&nbsp;<br>《4C团队教练》开创者&nbsp;&nbsp;<br>杉树公益教练型导师”创始教练&nbsp;&nbsp;<br>ICF 认证 PCC&nbsp;&nbsp;<br>专业教练",
+   "new": "隋于军 Alow</p>\n    <div style=\"color:#198264;display:flex;font-size:.75rem;line-height:1.25rem;margin:0.5rem 0;\">\n     <div class=\"team-cc\" style=\"background-color:#75BCA7;border-radius:6.25rem;padding:0 0.25rem;\">\n      <strong>创始人&nbsp;|&nbsp;首席导师</strong>\n     </div>\n     <div class=\"team-cc\" style=\"background-color:#75BCA7;border-radius:6.25rem;margin-left:0.5rem;padding:0 0.25rem;\">\n      <strong>课程导师</strong>\n     </div>\n    </div>\n    <p class=\"dio-four-p\" style=\"color:#fff;font-size:.75rem;font-weight:400;\">创问教练中心创始人，首席教练&nbsp;&nbsp;<br>《纯净教练》开创者&nbsp;&nbsp;<br>《4C团队教练》开创者&nbsp;&nbsp;<br>杉树公益教练型导师”创始教练&nbsp;&nbsp;<br>ICF 认证 MCC&nbsp;&nbsp;<br>大师级教练",
+   "count": 1,
+   "note": "隋于军 练 ICF 认证 PCC → 练 ICF 认证 MCC（2026-10-16 获 ICF MCC，客户告知）"
+  },
+  {
+   "type": "replace",
+   "table": "single_page",
+   "key": {
+    "slug": "social-community-zeng-university"
+   },
+   "field": "content",
+   "old": "隋于军 Allow</p>\n    <p class=\"c-content-tag\"><span>ICF PCC",
+   "new": "隋于军 Allow</p>\n    <p class=\"c-content-tag\"><span>ICF MCC",
+   "count": 1,
+   "note": "隋于军 llow ICF PCC → llow ICF MCC（2026-10-16 获 ICF MCC，客户告知）"
+  },
+  {
+   "type": "mapping",
+   "article_id": 14,
+   "remove": [
+    11
+   ],
+   "add": [
+    10
+   ],
+   "note": "隋于军导师页标签 ICF PCC → ICF MCC（2026-10-16 获 MCC）"
+  }
+ ]
+}
